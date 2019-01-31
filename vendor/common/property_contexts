@@ -80,6 +80,22 @@ vendor.debug.prerotation.disable  u:object_r:public_vendor_default_prop:s0
 vendor.debug.egl.swapinterval  u:object_r:public_vendor_default_prop:s0
 vendor.debug.egl.profiler  u:object_r:public_vendor_default_prop:s0
 
+#RenderScript debug properties
+vendor.debug.rs.noobjcache u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.verbose u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.nointrinsicblur u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.nointrinsicblas u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.noperfhint u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.dump_setup u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.noprofile u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.dump_bitcode u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.force_finish u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.disable_expand u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.use_fast_math u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.blurimpl u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.notextures u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.noperflock u:object_r:public_vendor_default_prop:s0
+
 #vendor-wlan
 vendor.wlan.  u:object_r:vendor_wifi_prop:s0
 
