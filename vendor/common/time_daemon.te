@@ -4,7 +4,7 @@ type vendor_time_data_file, file_type, data_file_type;
 
 init_daemon_domain(time_daemon)
 
-allow time_daemon self:capability { setgid setuid sys_time };
+allow time_daemon self:capability sys_time;
 
 allow time_daemon rtc_device:chr_file r_file_perms;
 
