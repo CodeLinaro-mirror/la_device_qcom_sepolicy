@@ -63,3 +63,5 @@ allow location hal_cne_hwservice:hwservice_manager find;
 binder_call(location, cnd)
 
 get_prop(location, vendor_wifi_prop)
+
+allow location self:qipcrtr_socket create_socket_perms_no_ioctl;
