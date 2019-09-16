@@ -1,23 +1,23 @@
 # Board specific SELinux policy variable definitions
 ifeq ($(call is-vendor-board-platform,QCOM),true)
-LOCAL_PATH:= $(call my-dir)
+SEPOLICY_PATH:= device/qcom/sepolicy
 BOARD_SEPOLICY_DIRS := \
        $(BOARD_SEPOLICY_DIRS) \
-       $(LOCAL_PATH) \
-       $(LOCAL_PATH)/vendor/common \
-       $(LOCAL_PATH)/vendor/$(TARGET_BOARD_PLATFORM) \
-       $(LOCAL_PATH)/vendor/common/sysmonapp
+       $(SEPOLICY_PATH) \
+       $(SEPOLICY_PATH)/vendor/common \
+       $(SEPOLICY_PATH)/vendor/$(TARGET_BOARD_PLATFORM) \
+       $(SEPOLICY_PATH)/vendor/common/sysmonapp
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR := \
     $(BOARD_PLAT_PUBLIC_SEPOLICY_DIR) \
-    $(LOCAL_PATH)/public
+    $(SEPOLICY_PATH)/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := \
     $(BOARD_PLAT_PRIVATE_SEPOLICY_DIR) \
-    $(LOCAL_PATH)/private
+    $(SEPOLICY_PATH)/private
 
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/vendor/test
+BOARD_SEPOLICY_DIRS += $(SEPOLICY_PATH)/vendor/test
 endif
 
 endif
