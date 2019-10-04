@@ -51,3 +51,6 @@ get_prop(hal_audio, vendor_audio_prop)
 
 # BT properties
 get_prop(hal_audio, vendor_bluetooth_prop)
+
+# allow access to ethavb audio hal socket
+allow hal_audio_default qti_init_shell:unix_stream_socket connectto;
