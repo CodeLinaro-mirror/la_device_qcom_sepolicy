@@ -1,4 +1,3 @@
 qti.ims.ext                                          u:object_r:radio_service:s0
 cneservice                                           u:object_r:cne_service:s0
-uce                                                  u:object_r:uce_service:s0
 com.qualcomm.location.izat.IzatService               u:object_r:izat_service:s0
