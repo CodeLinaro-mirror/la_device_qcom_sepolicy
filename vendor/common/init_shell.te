@@ -138,3 +138,6 @@ allow qti_init_shell msm_irqbalanced_exec:file getattr;
 set_prop(qti_init_shell, vendor_alarm_boot_prop)
 
 set_prop(qti_init_shell, vendor_wifi_prop)
+
+# Set ro.vendor.qti.soc to soc_id in init early boot script
+set_prop(qti_init_shell, vendor_soc_prop)

@@ -102,3 +102,6 @@ vendor.wlan.  u:object_r:vendor_wifi_prop:s0
 #time service
 persist.vendor.delta_time.enable    u:object_r:vendor_time_service_prop:s0
 vendor.debug.time_services.enable   u:object_r:vendor_time_service_prop:s0
+
+# Property for storing soc_id
+ro.vendor.qti.soc       u:object_r:vendor_soc_prop:s0

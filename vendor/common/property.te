@@ -61,3 +61,6 @@ type vendor_wifi_prop, property_type;
 
 #time service
 type vendor_time_service_prop, property_type;
+
+# Property for storing soc_id
+type vendor_soc_prop, property_type;
