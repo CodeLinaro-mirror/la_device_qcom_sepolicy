@@ -50,3 +50,12 @@ define(`diag_use', `
     r_dir_file($1, sysfs_diag)
     allow $1 diag_device:chr_file rw_file_perms;
 ')
+
+########################################
+# SoC detection at run time by vendor modules
+# Adds rules needed for vendor modules to get soc info at run time
+#
+# Placeholder - currently the detection mechanism does not require
+# any additional security permissions
+define(`use_libsoc_helper', `
+')
