@@ -33,3 +33,6 @@ user=system seinfo=platform name=com.qualcomm.qti.usta domain=usta_app type=syst
 
 #Add new domain for sysmon app
 user=_app seinfo=platform name=com.qualcomm.qti.sysmonappExternal domain=sysmon_app type=app_data_file levelFrom=all
+
+#Add new domain for LibsochelperTest app
+user=_app seinfo=platform name=com.qualcomm.qti.libsochelpertest domain=vendor_libsochelpertest_app type=app_data_file levelFrom=all
