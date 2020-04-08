@@ -139,5 +139,7 @@ set_prop(qti_init_shell, vendor_alarm_boot_prop)
 
 set_prop(qti_init_shell, vendor_wifi_prop)
 
-# Set ro.vendor.qti.soc to soc_id in init early boot script
-set_prop(qti_init_shell, vendor_soc_prop)
+# Set ro.vendor.qti.soc to soc_id in QCV init script
+set_prop(qti_init_shell, vendor_soc_prop);
+# Set ro.vendor.qti.soc.name to soc_name in QCV init script
+set_prop(qti_init_shell, vendor_soc_name_prop);

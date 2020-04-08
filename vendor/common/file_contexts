@@ -393,3 +393,4 @@
 /(vendor|system/vendor)/bin/init\.qcom\.wifi\.sh        u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.qti\.ims\.sh          u:object_r:init-qti-ims-sh_exec:s0
 /(vendor|system/vendor)/bin/qca6234-service.sh          u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.qti\.qcv\.sh          u:object_r:qti_init_shell_exec:s0
