@@ -63,5 +63,5 @@ type vendor_wifi_prop, property_type;
 type vendor_time_service_prop, property_type;
 
 # QCV properties for storing soc_id and soc_name
-type vendor_soc_prop, property_type;
+type vendor_soc_id_prop, property_type;
 type vendor_soc_name_prop, property_type;
