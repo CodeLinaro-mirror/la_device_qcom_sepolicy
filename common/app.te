@@ -9,6 +9,7 @@
 
 #Allow all apps to open and send ioctl to qdsp device
 allow appdomain qdsp_device:chr_file r_file_perms;
+allow appdomain xdsp_device:chr_file r_file_perms;
 #Allow all apps to have read access to dsp partition
 r_dir_file(appdomain, adsprpcd_file)
 
