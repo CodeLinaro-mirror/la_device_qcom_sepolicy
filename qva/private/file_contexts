@@ -43,6 +43,7 @@
 /(product|system_ext|system/system_ext)/bin/dpmd  u:object_r:vendor_dpmd_exec:s0
 /system/bin/qvrservice                          u:object_r:vendor_qvrd_exec:s0
 /system/bin/vpsservice                          u:object_r:vendor_vpsservice_exec:s0
+/system/bin/hyp_dvr_hidl_client                 u:object_r:vendor_hyp_dvr_hidl_client_exec:s0
 
 ####### system_ext file ###############
 /(system_ext|system/system_ext)/bin/dun-server  u:object_r:vendor_dun-server_exec:s0
