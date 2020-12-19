@@ -470,6 +470,7 @@
 /(vendor|system/vendor)/bin/init\.qti\.ims\.sh          u:object_r:init-qti-ims-sh_exec:s0
 /(vendor|system/vendor)/bin/qca6234-service.sh          u:object_r:qti_init_shell_exec:s0
 
+
 #early services
 /early_services(/.*)?                                                  u:object_r:early_services:s0
 /early_services                                                        u:object_r:early_services:s0
@@ -479,3 +480,7 @@
 /early_services/system/bin/init_early_spi_test                         u:object_r:earlyinit_test_exec:s0
 /early_services/system/lib(64)?(/.*)?                                  u:object_r:system_lib_file:s0
 /early_services/system/bin/bootstrap/linker(64)?                       u:object_r:system_linker_exec:s0
+
+#EMAC
+/(vendor|system/vendor)/bin/emac_rps_settings.sh        u:object_r:qti_init_shell_exec:s0
+
