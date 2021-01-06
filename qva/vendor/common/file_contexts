@@ -196,6 +196,7 @@
 /data/vendor/secure_element(/.*)?                                   u:object_r:secure_element_vendor_data_file:s0
 /data/vendor/sensing(/.*)?                                          u:object_r:sensing_vendor_data_file:s0
 /data/vendor/gaming(/.*)?                                           u:object_r:vendor_qspmhal_data_file:s0
+/data/vendor/qtee(/.*)?                                             u:object_r:vendor_qtee_data_file:s0
 
 ###################################
 # persist files
