@@ -475,5 +475,7 @@
 /early_services                                                        u:object_r:early_services:s0
 /early_services/init_early                                             u:object_r:init_exec:s0
 /early_services/system/bin/init_early_test                             u:object_r:earlyinit_test_exec:s0
+/early_services/system/bin/init_early_gpio_test                        u:object_r:earlyinit_test_exec:s0
+/early_services/system/bin/init_early_spi_test                         u:object_r:earlyinit_test_exec:s0
 /early_services/system/lib(64)?(/.*)?                                  u:object_r:system_lib_file:s0
 /early_services/system/bin/bootstrap/linker(64)?                       u:object_r:system_linker_exec:s0
