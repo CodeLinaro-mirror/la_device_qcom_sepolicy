@@ -34,3 +34,6 @@ hal_client_domain(platform_app, hal_scve)
 
 #allow platform_app to read vendor_mpctl_prop
 get_prop(platform_app, vendor_mpctl_prop)
+
+#allow platform_app to access embmssl hal
+hal_client_domain(platform_app, vendor_hal_embmssl)

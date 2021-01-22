@@ -139,3 +139,7 @@ attribute hal_capabilityconfigstore_qti_server;
 attribute hal_srvctracker;
 attribute hal_srvctracker_client;
 attribute hal_srvctracker_server;
+
+attribute vendor_hal_embmssl;
+attribute vendor_hal_embmssl_client;
+attribute vendor_hal_embmssl_server;
