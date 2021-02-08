@@ -31,6 +31,7 @@ persist.vendor.bluetooth.emailaccountcount u:object_r:bluetooth_prop:s0
 persist.vendor.bt.a2dp                     u:object_r:bluetooth_prop:s0
 persist.vendor.bt_logger.                  u:object_r:bluetooth_prop:s0
 persist.vendor.service.bt.                 u:object_r:bluetooth_prop:s0
+persist.service.bt.                        u:object_r:bluetooth_prop:s0
 ro.vendor.btstack.                         u:object_r:bluetooth_prop:s0
 vendor.pts.                                u:object_r:bluetooth_prop:s0
 vendor.bt.pts.                             u:object_r:bluetooth_prop:s0
