@@ -723,6 +723,8 @@
 /system/bin/QtiTelephonyService                 u:object_r:qti_telephony_exec:s0
 /vendor/bin/mutualex                            u:object_r:mutualex_exec:s0
 
-# embms kai artifacts
-/vendor/bin/embmsslServer   u:object_r:vendor_hal_embmssl_qti_exec:s0
+# embms artifacts
+/vendor/bin/embmsslServer                       u:object_r:vendor_hal_embmssl_qti_exec:s0
+/system/product/bin/embmsAdaptationService      u:object_r:embms_qti_exec:s0
+/system/product/bin/msdcService                 u:object_r:embms_qti_exec:s0
 

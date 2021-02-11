@@ -45,3 +45,10 @@ vendor.perfservice                             u:object_r:vendor_perf_service:s0
 wfdservice                                     u:object_r:wfdservice_service:s0
 imsservicemanager                              u:object_r:ims_service:s0
 rsuservice                                     u:object_r:rsu_service:s0
+
+# embms AIDL services
+b2g_telephony_mbms_binder                      u:object_r:embms_qti_service:s0
+ltebroadcastservice                            u:object_r:embms_qti_service:s0
+ltestreamingservice                            u:object_r:embms_qti_service:s0
+ltefiledeliveryservice                         u:object_r:embms_qti_service:s0
+ltenetworkservice                              u:object_r:embms_qti_service:s0

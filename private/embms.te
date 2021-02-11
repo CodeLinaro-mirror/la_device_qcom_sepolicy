@@ -1,4 +1,4 @@
-# Copyright (c) 2021, The Linux Foundation. All rights reserved.
+# Copyright (c) 2021 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -18,13 +18,40 @@
 # MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
 # ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
 # BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# # CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
 # SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
 # BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-type ims_service,                 service_manager_type;
-type rsu_service,                 service_manager_type;
-type embms_qti_service,           service_manager_type;
+type embms_qti_exec, exec_type, system_file_type, file_type;
+
+init_daemon_domain(embms_qti)
+net_domain(embms_qti)
+
+binder_use(embms_qti)
+add_service(embms_qti, embms_qti_service)
+
+set_prop(embms_qti, ctl_start_prop)
+
+allow embms_qti self:capability { net_admin net_raw };
+allow embms_qti init:unix_stream_socket connectto;
+
+allow embms_qti media_rw_data_file:dir r_dir_perms;
+allow embms_qti media_rw_data_file:file r_file_perms;
+
+allow embms_qti sdcardfs:dir r_dir_perms;
+allow embms_qti sdcardfs:file r_file_perms;
+
+r_dir_file(embms_qti, storage_file)
+r_dir_file(embms_qti, mnt_user_file)
+
+allow embms_qti embms_data_file:dir create_dir_perms;
+allow embms_qti embms_data_file:file create_file_perms;
+
+# binder calls
+allow embms_qti self:binder { call transfer };
+
+binder_call(b2g, embms_qti)
+binder_call(embms_qti, b2g)
