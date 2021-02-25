@@ -189,3 +189,4 @@ allow qti_init_shell sysfs_net:file { write };
 allow qti_init_shell proc:file { write };
 allow qti_init_shell vendor_file:file { execute_no_trans };
 allow qti_init_shell proc_interrupts:file { open read };
+allow qti_init_shell vendor_sysfs_rx_config:file w_file_perms;

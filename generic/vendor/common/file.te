@@ -204,3 +204,6 @@ type sysfs_aligned_blocks_addr, sysfs_type, fs_type;
 type sysfs_aligned_blocks_num, sysfs_type, fs_type;
 type sysfs_probe, sysfs_type, fs_type;
 type sysfs_memorybank, sysfs_type, fs_type;
+
+#EMAC
+type vendor_sysfs_rx_config, fs_type, sysfs_type;
