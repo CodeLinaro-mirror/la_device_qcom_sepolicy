@@ -51,6 +51,7 @@ genfscon sysfs /bus/hid/devices/*          u:object_r:sysfs_hid_devices:s0
 genfscon sysfs /bus/hid/drivers/*          u:object_r:sysfs_hid_drivers:s0
 genfscon sysfs /devices/virtual/xt_hardidletimer/timers u:object_r:sysfs_data:s0
 genfscon sysfs /devices/virtual/xt_idletimer/timers u:object_r:sysfs_data:s0
+genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-2/2-0039/vxr7200_enable    u:object_r:sysfs_vxr7200:s0
 
 genfscon debugfs /clk u:object_r:qti_debugfs:s0
 genfscon debugfs /regulator u:object_r:qti_debugfs:s0

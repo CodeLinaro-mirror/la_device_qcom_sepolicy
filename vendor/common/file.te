@@ -391,3 +391,6 @@ type sysfs_vservices, sysfs_type, fs_type;
 type sysfs_rmnet, fs_type, sysfs_type;
 
 type qvr_file, file_type;
+
+#sysfs_vxr7200 sysfs files
+type sysfs_vxr7200, fs_type, sysfs_type;

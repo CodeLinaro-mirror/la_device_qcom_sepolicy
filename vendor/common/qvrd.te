@@ -109,3 +109,12 @@ allow qvrd self:tcp_socket { create accept bind read setopt write };
 
 #allow qvrd to access /system/etc/qvr
 r_dir_file(qvrd, qvr_file)
+
+#allow qvrd to access /dev/at_usb
+allow qvrd at_device:chr_file rw_file_perms;
+
+#allow qvrd to access /dev/hidg
+allow qvrd hid_device:chr_file rw_file_perms;
+
+#allow qvrd to r/w sysfs_vxr7200
+allow qvrd sysfs_vxr7200:file rw_file_perms;

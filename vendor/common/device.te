@@ -195,3 +195,6 @@ type qg_device, dev_type;
 
 #define qvr external sensor device
 type qvr_external_sensor_device, dev_type;
+
+#define hid device
+type hid_device, dev_type;
