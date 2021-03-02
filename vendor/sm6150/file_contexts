@@ -31,6 +31,8 @@
 /dev/spidev0.0                                                                  u:object_r:audio_device:s0
 /dev/i2c-6                                                                      u:object_r:audio_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/ssd                              u:object_r:ssd_block_device:s0
+/dev/ttyHS1                                                                     u:object_r:location_device:s0
+/dev/gnss_sirf                                                                  u:object_r:location_device:s0
 
 # Dev block nodes
 /dev/block/mmcblk0rpmb                                                          u:object_r:rpmb_device:s0
