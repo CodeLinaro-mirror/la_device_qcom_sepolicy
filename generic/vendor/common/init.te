@@ -97,6 +97,11 @@ allow init qcarcam_edrm_rvc_exec:file {r_file_perms execute};
 domain_auto_trans(init, qcarcam_edrm_rvc_exec, qcarcam_edrm_rvc)
 allow init esplash_exec:file {r_file_perms execute};
 domain_auto_trans(init, esplash_exec, esplash)
+allow init early_chime_exec:file {r_file_perms execute};
+domain_auto_trans(init, early_chime_exec, early_chime)
+
+allow init self:capability {sys_module};
+allow init vendor_file:system module_load;
 
 #Relabing SE labels permission
 allow init device:chr_file relabelfrom;
@@ -118,6 +123,10 @@ allow init ion_device:chr_file relabelto;
 allow ion_device device:filesystem associate;
 allow init gpu_device:chr_file relabelto;
 allow gpu_device device:filesystem associate;
+
+allow init audio_device:dir relabelto;
+allow init audio_device:chr_file relabelto;
+allow audio_device device:filesystem associate;
 
 allow init tmpfs:chr_file rw_file_perms;
 allow init tmpfs:dir r_dir_perms;
