@@ -183,3 +183,9 @@ allow qti_init_shell sysfs_suspend:file w_file_perms;
 # To read/write GPU frequencies  and set attributes
 allow qti_init_shell sysfs_kgsl:dir r_dir_perms;
 allow qti_init_shell sysfs_kgsl:file { rw_file_perms setattr };
+
+#EMAC
+allow qti_init_shell sysfs_net:file { write };
+allow qti_init_shell proc:file { write };
+allow qti_init_shell vendor_file:file { execute_no_trans };
+allow qti_init_shell proc_interrupts:file { open read };
