@@ -40,4 +40,6 @@ allow audiod proc_audiod:file r_file_perms;
 allow audiod audio_device:dir r_dir_perms;
 allow audiod audio_device:chr_file rw_file_perms;
 
+get_prop(audiod, vendor_sysboot_completed_prop)
+
 wakelock_use(audiod);
