@@ -1,4 +1,4 @@
-# Copyright (c) 2016, The Linux Foundation. All rights reserved.
+# Copyright (c) 2016, 2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -98,3 +98,23 @@ allow qvrd qvr_external_sensor_device:chr_file rw_file_perms;
 # qvr properties
 set_prop(qvrd, qvr_prop)
 get_prop(qvrd, qvr_prop)
+
+##Allow qvrd to create and communicate over tcp sockets for usf debug
+userdebug_or_eng(`
+allow qvrd usf_device:chr_file rw_file_perms;
+allow qvrd netd:unix_stream_socket connectto;
+allow qvrd port:tcp_socket name_bind;
+allow qvrd self:tcp_socket { create accept bind read setopt write };
+')
+
+#allow qvrd to access /system/etc/qvr
+r_dir_file(qvrd, qvr_file)
+
+#allow qvrd to access /dev/at_usb
+allow qvrd at_device:chr_file rw_file_perms;
+
+#allow qvrd to access /dev/hidg
+allow qvrd hid_device:chr_file rw_file_perms;
+
+#allow qvrd to r/w sysfs_vxr7200
+allow qvrd sysfs_vxr7200:file rw_file_perms;
