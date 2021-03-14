@@ -116,6 +116,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.factory@1\.0-service         u:object_r:vendor_hal_factory_qti_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.servicetracker@1\.[0-1]-service u:object_r:hal_srvctracker_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.cvp@1\.0-service             u:object_r:vendor_cvp_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.secureprocessor@1\.0         u:object_r:vendor_hal_secureprocessor_qti_exec:s0
 /(vendor|system/vendor)/bin/fstman                                                 u:object_r:fstman_exec:s0
 /(vendor|system/vendor)/bin/wigighalsvc                                            u:object_r:wigighalsvc_exec:s0
 /(vendor|system/vendor)/bin/wigignpt                                               u:object_r:wigignpt_exec:s0
@@ -195,6 +196,7 @@
 /data/vendor/secure_element(/.*)?                                   u:object_r:secure_element_vendor_data_file:s0
 /data/vendor/sensing(/.*)?                                          u:object_r:sensing_vendor_data_file:s0
 /data/vendor/gaming(/.*)?                                           u:object_r:vendor_qspmhal_data_file:s0
+/data/vendor/qtee(/.*)?                                             u:object_r:vendor_qtee_data_file:s0
 
 ###################################
 # persist files

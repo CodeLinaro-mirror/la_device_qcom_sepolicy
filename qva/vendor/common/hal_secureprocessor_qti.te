@@ -1,4 +1,4 @@
-# Copyright (c) 2020, The Linux Foundation. All rights reserved.
+# Copyright (c) 2019, 2021 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -25,8 +25,22 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# trinket/location_app.te - sepolicy rules for qti value added location apps
-# rules specific to trinket target
+type vendor_hal_secureprocessor_qti, domain;
+hal_server_domain(vendor_hal_secureprocessor_qti, vendor_hal_secureprocessor)
 
-# Allow location app domain to perform binder IPC to gpuservice server domain.
-binder_call(location_app, gpuservice);
+type vendor_hal_secureprocessor_qti_exec, exec_type, file_type, vendor_file_type;
+init_daemon_domain(vendor_hal_secureprocessor_qti)
+
+binder_call(vendor_hal_secureprocessor_client, vendor_hal_secureprocessor_server)
+binder_call(vendor_hal_secureprocessor_server, vendor_hal_secureprocessor_client)
+
+hal_attribute_hwservice(vendor_hal_secureprocessor, vendor_hal_secureprocessor_hwservice)
+
+allow vendor_hal_secureprocessor_qti tee_device:chr_file rw_file_perms;
+allow vendor_hal_secureprocessor_qti ion_device:chr_file r_file_perms;
+
+hal_client_domain(vendor_hal_secureprocessor_qti, hal_graphics_allocator);
+
+allow vendor_hal_secureprocessor_qti vendor_qtee_data_file:dir rw_dir_perms;
+allow vendor_hal_secureprocessor_qti vendor_qtee_data_file:file create_file_perms;
+allow vendor_hal_secureprocessor_qti video_device:chr_file rw_file_perms;
