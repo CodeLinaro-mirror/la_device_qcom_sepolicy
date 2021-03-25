@@ -34,6 +34,7 @@ userdebug_or_eng(`
 
 # Access firmware_file
 r_dir_file(kernel, firmware_file)
+allow kernel firmware_file:filesystem  { relabelto relabelfrom  mount };
 
 
 # access vendor_firmware_file
