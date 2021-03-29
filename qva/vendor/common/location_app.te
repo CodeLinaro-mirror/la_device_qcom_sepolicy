@@ -33,3 +33,6 @@ hal_client_domain(location_app, hal_perf)
 
 # allow location_app to access gpu_model
 allow location_app sysfs_kgsl_gpu_model:file r_file_perms;
+
+# Allow location app domain to perform binder IPC to gpuservice server domain.
+binder_call(location_app, gpuservice);
