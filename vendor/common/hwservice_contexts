@@ -94,3 +94,4 @@ vendor.qti.hardware.mlshal::IMlsVnc                          u:object_r:hal_mirr
 vendor.qti.hardware.cvp::ICvp                                u:object_r:hal_cvp_hwservice:s0
 vendor.qti.hardware.wifi.wifilearner::IWifiStats             u:object_r:hal_wifilearner_hwservice:s0
 vendor.qti.hardware.seccam::ISecCam                          u:object_r:hal_seccam_hwservice:s0
+vendor.qti.hardware.sxrhal::ISxrCrypto                       u:object_r:sxrhalservice_hwservice:s0
