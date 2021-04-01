@@ -36,3 +36,4 @@ binder_call(audioserver, qti_telephony);
 
 binder_call(qti_telephony, servicemanager)
 allow qti_telephony ims_service:service_manager add;
+allow qti_telephony rsu_service:service_manager add;

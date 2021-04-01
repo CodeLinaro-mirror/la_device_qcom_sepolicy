@@ -719,5 +719,6 @@
 /(vendor|system/vendor)/bin/wifilearner    u:object_r:wifilearnersvc_exec:s0
 
 /system/bin/imsd                                u:object_r:qti_telephony_exec:s0
+/system/bin/rsud                                u:object_r:qti_telephony_exec:s0
 /system/bin/QtiTelephonyService                 u:object_r:qti_telephony_exec:s0
 /vendor/bin/mutualex                            u:object_r:mutualex_exec:s0

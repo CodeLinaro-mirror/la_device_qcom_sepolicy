@@ -26,3 +26,4 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 type ims_service,                 service_manager_type;
+type rsu_service,                 service_manager_type;
