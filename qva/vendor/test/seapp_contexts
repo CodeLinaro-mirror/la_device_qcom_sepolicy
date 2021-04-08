@@ -35,3 +35,5 @@ user=system seinfo=platform name=com.qualcomm.qti.qdmautils domain=qdmautils_app
 
 user=_app seinfo=platform name=com.qualcomm.qti.dualstaapp domain=dualsta_app type=app_data_file levelfrom=all
 
+user=_app seinfo=platform name=com.qualcomm.qti.cam2test domain=vendor_sys_seccam2_app type=app_data_file levelFrom=all
+
