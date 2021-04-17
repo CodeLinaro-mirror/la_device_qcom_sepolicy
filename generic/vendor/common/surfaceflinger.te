@@ -1,4 +1,4 @@
-# Copyright (c) 2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2019-2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -36,3 +36,5 @@ get_prop(surfaceflinger, vendor_display_prop)
 hal_client_domain(surfaceflinger, hal_perf)
 
 r_dir_file(surfaceflinger, sysfs_kgsl)
+allow surfaceflinger hal_evs_driver:binder { call transfer };
+allow surfaceflinger hal_evs_driver:fd use;

@@ -1,4 +1,4 @@
-# Copyright (c) 2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2019, 2021 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -37,9 +37,19 @@ init_daemon_domain(hal_evs_driver)
 allow hal_evs_driver video_device:chr_file { ioctl open read write };
 hal_client_domain(hal_evs_driver, hal_graphics_allocator);
 
-allow hal_evs_driver gpu_device:chr_file { getattr ioctl open read write };
+allow hal_evs_driver gpu_device:chr_file { getattr ioctl open read write map};
 allow hal_evs_driver hal_graphics_composer_default:fd use;
 allow hal_evs_driver hal_graphics_allocator_default_tmpfs:file { read write };
+
+allow hal_evs_driver servicemanager:binder call;
+allow hal_evs_driver surfaceflinger:binder { call transfer };
+allow hal_evs_driver hal_configstore_default:binder call;
+allow hal_evs_driver surfaceflinger_service:service_manager find;
+allow hal_evs_driver sysfs_kgsl:file { getattr open read };
+userdebug_or_eng(`
+  allow hal_evs_driver vendor_gles_data_file:dir search;
+  allow hal_evs_driver vendor_gles_data_file:file { getattr open read };
+')
 
 typeattribute hal_evs_driver binder_in_vendor_violators;
 allow hal_evs_driver binder_device:chr_file { read write };
@@ -49,3 +59,4 @@ allow hal_evs_driver camera_socket_device:sock_file write;
 allow hal_evs_driver ais_server:unix_stream_socket connectto;
 allow hal_evs_driver ion_device:chr_file { ioctl open read };
 allow hal_evs_driver early_services:dir r_dir_perms;
+allow hal_evs_driver surfaceflinger:fd use;
