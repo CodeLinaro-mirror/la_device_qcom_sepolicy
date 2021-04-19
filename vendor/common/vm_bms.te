@@ -30,3 +30,4 @@ wakelock_use(vm_bms)
 
 #allow start and stop of vm_bms via ctl.start/ctl.stop
 set_prop(vm_bms, vendor_vm_bms_prop)
+set_prop(vm_bms, vendor_vm_bms_debug_prop)
