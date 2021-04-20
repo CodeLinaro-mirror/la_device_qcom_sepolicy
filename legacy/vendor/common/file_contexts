@@ -111,6 +111,9 @@
 /dev/ipa_odl_ctl                                u:object_r:ipa_dev:s0
 /dev/ipa_adpl                                   u:object_r:ipa_dev:s0
 
+# smcinvoke device node
+/dev/smcinvoke                                  u:object_r:smcinvoke_device:s0
+
 ###################################
 # Dev block nodes
 #
