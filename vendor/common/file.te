@@ -394,3 +394,6 @@ type qvr_file, file_type;
 
 #sysfs_vxr7200 sysfs files
 type sysfs_vxr7200, fs_type, sysfs_type;
+
+#sysfs usb node
+type vendor_sysfs_usb_node, fs_type, sysfs_type;
