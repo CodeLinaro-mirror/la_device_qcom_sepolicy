@@ -125,3 +125,5 @@ hal_client_domain(vendor_hal_perf_default, hal_allocator);
 
 allow vendor_hal_perf_default block_device:dir { open read search };
 allow vendor_hal_perf_default proc_diskstats:file { getattr open read };
+
+allow vendor_hal_perf_default self:capability { sys_nice setuid };
