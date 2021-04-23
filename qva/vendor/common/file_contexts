@@ -283,4 +283,4 @@
 /sys/devices/platform/soc/soc:qcom,blackghost/subsys[0-6]+/state        u:object_r:vendor_sysfs_ssr:s0
 /(vendor|system/vendor)/bin/bg_daemon                                   u:object_r:bg_daemon_exec:s0
 
-
+/dev/block/platform/soc/7824900.sdhci/by-name/persist                   u:object_r:vendor_persist_block_device:s0
