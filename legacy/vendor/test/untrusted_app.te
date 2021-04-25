@@ -35,4 +35,5 @@ r_dir_file(untrusted_app, sysfs_kgsl_snapshot);
 r_dir_file(untrusted_app, vendor_gles_data_file);
 allow untrusted_app vendor_gles_data_file:dir rw_dir_perms;
 allow untrusted_app vendor_gles_data_file:file rw_file_perms;
+get_prop(untrusted_app, persist_camera_prop);
 ')
