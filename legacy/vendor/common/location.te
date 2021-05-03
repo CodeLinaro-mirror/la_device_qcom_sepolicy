@@ -128,6 +128,10 @@ get_prop(location, cnd_vendor_prop)
 
 #Allow access to wake alarm
 allow location self:capability2 wake_alarm;
-
 #allow qdma prop
 get_prop(location, vendor_qdma_prop);
+
+#xtra-demon
+allow location hal_cacert_hwservice:hwservice_manager find;
+## Allow location clientdomain to perform binder IPC to qtidataservices_app serverdomain.
+binder_call(location, qtidataservices_app)
