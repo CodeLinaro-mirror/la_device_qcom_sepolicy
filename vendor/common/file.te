@@ -397,3 +397,6 @@ type sysfs_vxr7200, fs_type, sysfs_type;
 
 #sysfs usb node
 type vendor_sysfs_usb_node, fs_type, sysfs_type;
+
+#sysfs video4linux
+type sysfs_v4l, fs_type, sysfs_type;

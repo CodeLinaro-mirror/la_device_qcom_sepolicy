@@ -123,3 +123,6 @@ allow qvrd sysfs_vxr7200:file rw_file_perms;
 allow qvrd vendor_sysfs_usb_node:file rw_file_perms;
 allow qvrd sysfs_usbpd_device:dir r_dir_perms;
 allow qvrd sysfs_usbpd_device:file rw_file_perms;
+
+#allow qvrd to access video4linux
+allow qvrd sysfs_v4l:dir r_dir_perms;
