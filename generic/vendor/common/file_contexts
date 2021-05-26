@@ -322,6 +322,8 @@
 # graphics device
 /dev/mdss_rotator                               u:object_r:graphics_device:s0
 /dev/dri/card0                                  u:object_r:graphics_device:s0
+/dev/dri/card1                                  u:object_r:graphics_device:s0
+/dev/dri/card2                                  u:object_r:graphics_device:s0
 /dev/dri/controlD64                             u:object_r:graphics_device:s0
 /dev/dri/renderD128                             u:object_r:graphics_device:s0
 
@@ -465,3 +467,22 @@
 
 #Limits sysfs node
 /sys/module/msm_isense_cdsp/data                        u:object_r:sysfs_thermal:s0
+
+# Early services
+/early_services(/.*)?                                                  u:object_r:early_services:s0
+/early_services                                                        u:object_r:early_services:s0
+/early_services/init_early                                             u:object_r:init_exec:s0
+/early_services/system/bin/init_early_test                             u:object_r:earlyinit_test_exec:s0
+/early_services/system/lib(64)?(/.*)?                                  u:object_r:system_lib_file:s0
+/early_services/system/bin/bootstrap/linker(64)?                       u:object_r:system_linker_exec:s0
+
+# ais camera
+/(vendor|system/vendor)/bin/ais_server                              u:object_r:ais_server_exec:s0
+#/(vendor|system/vendor)/bin/ais_v4l2_proxy                          u:object_r:ais_v4l2_proxy_exec:s0
+/dev/socket/camera(/.*)?                                            u:object_r:camera_socket_device:s0
+/(vendor|system/vendor)/bin/qcarcam_edrm_rvc                        u:object_r:qcarcam_edrm_rvc_exec:s0
+/(vendor|system/vendor)/bin/esplash                                 u:object_r:esplash_exec:s0
+
+/early_services/vendor/bin/qcarcam_edrm_rvc                         u:object_r:qcarcam_edrm_rvc_exec:s0
+/early_services/vendor/bin/ais_server                               u:object_r:ais_server_exec:s0
+/early_services/vendor/bin/esplash                                  u:object_r:esplash_exec:s0

@@ -207,3 +207,12 @@ type sysfs_kgsl_gpu_model, sysfs_type, fs_type;
 
 # kgsl_gpuclk file type for sysfs access
 type sysfs_kgsl_gpuclk, sysfs_type, fs_type;
+
+#early_services file
+type early_services, file_type;
+type earlyinit_test_exec, exec_type, file_type, vendor_file_type;
+
+#camera file
+type camera_socket_device, file_type;
+
+type debugfs_kpi, debugfs_type, fs_type;

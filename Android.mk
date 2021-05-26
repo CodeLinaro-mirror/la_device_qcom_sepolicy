@@ -67,4 +67,8 @@ ifneq (,$(filter sdm845 sdm710, $(TARGET_BOARD_PLATFORM)))
     BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/legacy/vendor/test
     endif
 endif
+
+
+BOARD_EARLY_EXTRA_SEPOLICY_DIRS := \
+            $(LOCAL_PATH)/generic/vendor/common/early_services
 endif
