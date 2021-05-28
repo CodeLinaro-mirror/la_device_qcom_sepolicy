@@ -38,6 +38,7 @@ init_daemon_domain(sxrhalservice_qti)
 vndbinder_use(sxrhalservice)
 
 # Allow hwbinder call from hal client to server
+allow sxrhalservice_client sxrhalservice_hwservice:hwservice_manager find;
 binder_call(sxrhalservice_client, sxrhalservice_server)
 binder_call(sxrhalservice_server, sxrhalservice_client)
 
@@ -51,3 +52,6 @@ r_dir_file(sxrhalservice, firmware_file)
 #Allow access to tee/ion device and tcp socket for HDCP sessions
 allow sxrhalservice tee_device:chr_file rw_file_perms;
 allow sxrhalservice ion_device:chr_file r_file_perms;
+
+#allow access to and use of graphics allocator
+hal_client_domain(sxrhalservice_qti, hal_graphics_allocator)

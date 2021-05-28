@@ -55,3 +55,6 @@ allow sxrd sysfs_kgsl:file rw_file_perms;
 r_dir_file(sxrd, proc_asound)
 # Add the rule for sxrd to access /proc/asound/card0/state file
 r_dir_file(sxrd, proc_audiod)
+
+#Allow access to sxrhalservice
+hal_client_domain(sxrd, sxrhalservice)
