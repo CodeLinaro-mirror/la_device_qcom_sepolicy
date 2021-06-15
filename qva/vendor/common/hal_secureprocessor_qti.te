@@ -46,5 +46,6 @@ hal_client_domain(vendor_hal_secureprocessor_qti, hal_graphics_allocator);
 allow vendor_hal_secureprocessor_qti vendor_qtee_data_file:dir rw_dir_perms;
 allow vendor_hal_secureprocessor_qti vendor_qtee_data_file:file create_file_perms;
 allow vendor_hal_secureprocessor_qti video_device:chr_file rw_file_perms;
+allow vendor_hal_secureprocessor_qti gpu_device:chr_file { read write lock open ioctl map };
 
 get_prop(vendor_hal_secureprocessor_qti, vendor_adsprpc_prop);
