@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2018-2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -87,3 +87,4 @@ allow hal_graphics_composer_client hal_display_config_hwservice:hwservice_manage
 
 # Allow qdcmss socket access
 unix_socket_connect(hal_graphics_composer_default, qdcmsocket, qdcm-ss)
+allow hal_graphics_composer_default hal_evs_driver:fd use;
