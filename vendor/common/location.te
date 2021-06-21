@@ -111,3 +111,5 @@ binder_call(location, qtidataservices_app)
 get_prop(location, vendor_qdma_prop);
 
 allow location system_file:file { read open getattr };
+
+allow location sysfs_net:dir read;
