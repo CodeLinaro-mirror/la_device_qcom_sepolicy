@@ -373,6 +373,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service          u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/init.qti.charger.sh     u:object_r:qti_init_shell_exec:s0
 /system/etc/qvr(/.*)?                               u:object_r:qvr_file:s0
+/(vendor|system/vendor)/bin/sxrhalservice        u:object_r:sxrhalservice_qti_exec:s0
 ###################################
 # sysfs files
 #
