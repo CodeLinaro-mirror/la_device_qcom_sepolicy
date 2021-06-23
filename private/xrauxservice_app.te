@@ -34,7 +34,9 @@ net_domain(xrauxservice_app)
 
 allow xrauxservice_app activity_service:service_manager find;
 allow xrauxservice_app vendor_perf_service:service_manager find;
-allow xrauxservice_app system_file:dir r_file_perms;
+allow xrauxservice_app audio_service:service_manager find;
+allow xrauxservice_app system_file:dir r_dir_perms;
 allow xrauxservice_app qvrd_socket:sock_file w_file_perms;
 allow xrauxservice_app qvrd:unix_stream_socket connectto;
 allow xrauxservice_app qvrd:fd use;
+allow xrauxservice_app app_data_file:dir r_dir_perms;
