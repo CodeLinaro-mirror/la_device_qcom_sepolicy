@@ -1,4 +1,4 @@
-# Copyright (c) 2018, The Linux Foundation. All rights reserved.
+# Copyright (c) 2018, 2021 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -25,42 +25,40 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # Policy for sensor daemon
-type sensors, domain;
-type sensors_exec, exec_type, vendor_file_type, file_type;
+type sensors_qti, domain;
+type sensors_qti_exec, exec_type, vendor_file_type, file_type;
 
-init_daemon_domain(sensors)
-get_prop(sensors, sensors_prop)
+init_daemon_domain(sensors_qti)
+get_prop(sensors_qti, sensors_prop)
 
-allow sensors self:capability {
+allow sensors_qti self:capability {
     setuid
     setgid
     net_bind_service
 };
 
-allow sensors self:{ socket qipcrtr_socket } create_socket_perms;
+# Access to tests from userdebug/eng builds
+userdebug_or_eng(`
+  diag_use(sensors_qti)
+  get_prop(sensors_qti, sensors_dbg_prop)
+
+  #allow starting of diag_mdlog
+  allow sensors_qti qlogd_exec:file rx_file_perms;
+  allow sensors_qti vendor_shell_exec:file rx_file_perms;
+')
+
+allow sensors_qti self:{ socket qipcrtr_socket } create_socket_perms;
 # ioctlcmd=c304
-allowxperm sensors self:{ socket qipcrtr_socket } ioctl msm_sock_ipc_ioctls;
+allowxperm sensors_qti self:{ socket qipcrtr_socket } ioctl msm_sock_ipc_ioctls;
 
-allow sensors mnt_vendor_file:dir r_dir_perms;
+allow sensors_qti mnt_vendor_file:dir r_dir_perms;
 
-allow sensors system_file:dir r_dir_perms;
-allow sensors sensors_device:chr_file rw_file_perms;
+allow sensors_qti sensors_vendor_data_file:dir create_dir_perms;
+allow sensors_qti sensors_vendor_data_file:file create_file_perms;
 
-allow sensors sysfs_soc:file w_file_perms;
-allow sensors sysfs_data:file r_file_perms;
-
-allow sensors ion_device:chr_file r_file_perms;
-allow sensors qdsp_device:chr_file r_file_perms;
-allow sensors xdsp_device:chr_file r_file_perms;
-
-# For reading dir/files on /dsp
-r_dir_file(sensors, adsprpcd_file)
-# For reading adsprpc_prop
-get_prop(sensors, vendor_adsprpc_prop)
-
-allow sensors persist_sensors_file:fifo_file create_file_perms;
+allow sensors_qti persist_sensors_file:fifo_file create_file_perms;
 # Access to /persist/sensors
-allow sensors persist_sensors_file:dir create_dir_perms;
-allow sensors persist_sensors_file:file create_file_perms;
+allow sensors_qti persist_sensors_file:dir create_dir_perms;
+allow sensors_qti persist_sensors_file:file create_file_perms;
 # Access to wakelock sysfs
-wakelock_use(sensors)
+wakelock_use(sensors_qti)
