@@ -61,3 +61,6 @@
 /data/misc/qvr(/.*)?                            u:object_r:vendor_qvrd_data_file:s0
 /data/nfc(/.*)?                                 u:object_r:nfc_data_file:s0
 /data/misc/qdma(/.*)?                           u:object_r:vendor_qcc_data_file:s0
+
+####### evs test app ##############
+/system/bin/evs_ais_app                         u:object_r:evs_ais_app_exec:s0
