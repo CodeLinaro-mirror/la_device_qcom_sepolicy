@@ -25,6 +25,7 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 type vendor_sysfs_audio, fs_type, sysfs_type;
+type vendor_sysfs_sndcard, fs_type, sysfs_type;
 type vendor_sysfs_battery_supply, sysfs_type, fs_type;
 type vendor_sysfs_bond0, fs_type, sysfs_type;
 type vendor_sysfs_boot_adsp, sysfs_type, fs_type;
@@ -66,6 +67,7 @@ type vendor_sysfs_usbpd_device, sysfs_type, fs_type;
 type vendor_sysfs_vadc_dev, sysfs_type, fs_type;
 type vendor_sysfs_lcd, sysfs_type, fs_type;
 type vendor_sysfs_adsp_ssr, sysfs_type, fs_type;
+type vendor_sysfs_bg_ssr, sysfs_type, fs_type;
 type vendor_sysfs_svm_neuron, sysfs_type, fs_type;
 type vendor_sysfs_trusted_touch_enable, sysfs_type, fs_type;
 type vendor_sysfs_trusted_touch_event, sysfs_type, fs_type;
@@ -189,6 +191,9 @@ type vendor_hbtp_cfg_file, file_type, vendor_file_type;
 
 #tloc data files
 type vendor_tlocd_data_file, file_type, data_file_type;
+
+#audio graph manager sysfs file
+type vendor_sysfs_agm, fs_type, sysfs_type;
 
 #qseecom
 type vendor_data_qsee_file, file_type, data_file_type;

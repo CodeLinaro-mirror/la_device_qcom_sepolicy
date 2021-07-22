@@ -55,6 +55,10 @@
 /dev/wcd-dsp-glink                              u:object_r:audio_device:s0
 /dev/wcd_dsp0_control                           u:object_r:audio_device:s0
 /dev/wcd-spi-ac-client                          u:object_r:audio_device:s0
+/dev/msm_audio_ion                              u:object_r:vendor_agm_device:s0
+/dev/aud_pasthru_adsp                           u:object_r:vendor_agm_device:s0
+/dev/gpr_channel                                u:object_r:vendor_agm_device:s0
+/dev/nongpr_channel                             u:object_r:vendor_agm_device:s0
 /dev/msm_.*                                     u:object_r:audio_device:s0
 /dev/avtimer                                    u:object_r:vendor_avtimer_device:s0
 /dev/subsys_.*                                  u:object_r:vendor_ssr_device:s0
@@ -113,6 +117,9 @@
 /dev/block/zram0                                u:object_r:swap_block_device:s0
 /data/vendor/swap(/.*)?                         u:object_r:vendor_swap_data_file:s0
 
+#senors glink dev node
+/dev/glinkpkt_slate_ssc_hal                     u:object_r:vendor_glink_slate_ssc_hal_device:s0
+
 # files in /vendor
 /vendor/firmware(/.*)?          u:object_r:vendor_firmware_file:s0
 /vendor/bt_firmware(/.*)?       u:object_r:vendor_firmware_file:s0
@@ -124,6 +131,7 @@
 /vendor/bin/thermal-engine      u:object_r:vendor_thermal-engine_exec:s0
 /vendor/bin/sensors.qcom        u:object_r:vendor_sensors_exec:s0
 /vendor/bin/sensors.qti         u:object_r:vendor_sensors_exec:s0
+/vendor/bin/sns_wrist_ssr       u:object_r:vendor_wrist_ssr_exec:s0
 /vendor/bin/ssr_setup           u:object_r:vendor_ssr_setup_exec:s0
 /vendor/bin/ssr_diag            u:object_r:vendor_ssr_diag_exec:s0
 /vendor/bin/pm-service          u:object_r:vendor_per_mgr_exec:s0
@@ -181,9 +189,9 @@
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service-qti        u:object_r:vendor_hal_gatekeeper_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@.*-service-qti u:object_r:vendor_hal_gnss_qti_exec:s0
 /vendor/bin/hw/android\.hardware\.bluetooth@1\.0-service-qti         u:object_r:hal_bluetooth_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service.widevine    u:object_r:vendor_hal_drm_widevine_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service.widevine    u:object_r:vendor_hal_drm_widevine_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service-lazy.widevine    u:object_r:vendor_hal_drm_widevine_exec:s0
+/vendor/bin/hw/vendor\.qti\.hardware\.limits@1\.0-service                u:object_r:hal_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service.clearkey   u:object_r:vendor_hal_drm_clearkey_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service-lazy.clearkey    u:object_r:vendor_hal_drm_clearkey_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service.widevine    u:object_r:vendor_hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service-lazy.widevine    u:object_r:vendor_hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.display\.allocator@1\.0-service   u:object_r:hal_graphics_allocator_default_exec:s0

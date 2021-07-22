@@ -25,6 +25,7 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 type vendor_ab_block_device, dev_type;
+type vendor_agm_device, dev_type;
 type vendor_at_device, dev_type;
 type vendor_avtimer_device, dev_type;
 type vendor_bt_device, dev_type;
@@ -67,3 +68,4 @@ type vendor_uefi_block_device, dev_type;
 type vendor_qce_device, dev_type;
 type vendor_npu_device, dev_type;
 type vendor_qmcs_block_device, dev_type;
+type vendor_glink_slate_ssc_hal_device, dev_type;

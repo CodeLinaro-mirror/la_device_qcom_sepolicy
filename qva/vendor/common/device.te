@@ -51,6 +51,7 @@ type vendor_qg_device, dev_type;
 #define qvr external sensor device
 type vendor_qvr_external_sensor_device, dev_type;
 type bg_daemon_device, dev_type;
+type slate_daemon_device, dev_type;
 type vendor_device_latency, dev_type;
 type ssd_device, dev_type;
 type qdss_device, dev_type;

@@ -107,6 +107,7 @@ persist.vendor.tb.                           u:object_r:vendor_hvdcp_opti_prop:s
 persist.vendor.vin.                          u:object_r:vendor_hvdcp_opti_prop:s0
 persist.vendor.qg.                           u:object_r:vendor_hvdcp_opti_prop:s0
 persist.vendor.soh.                          u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.qbg.                          u:object_r:vendor_hvdcp_opti_prop:s0
 
 # XLAT property
 persist.vendor.net.doxlat                    u:object_r:vendor_xlat_prop:s0
@@ -138,7 +139,11 @@ persist.vendor.mwqem.                        u:object_r:vendor_mwqem_prop:s0
 
 vendor.bg_reset               		     u:object_r:vendor_bg_daemon_prop:s0
 
+vendor.slate_reset                           u:object_r:vendor_slate_daemon_prop:s0
+
 vendor.bg.boot_complete       		     u:object_r:vendor_bg_boot_complete_prop:s0
+
+vendor.slate.boot_complete                   u:object_r:vendor_slate_boot_complete_prop:s0
 
 persist.vendor.bg.qspy_logging      	     u:object_r:vendor_bg_qspy_logging_prop:s0
 

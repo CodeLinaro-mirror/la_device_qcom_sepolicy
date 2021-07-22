@@ -52,6 +52,7 @@
 /dev/qg_battery                       u:object_r:vendor_qg_device:s0
 /dev/qvr_external_sensor_ioctl        u:object_r:vendor_qvr_external_sensor_device:s0
 /dev/bg_com_dev                       u:object_r:bg_daemon_device:s0
+/dev/slate_com_dev                    u:object_r:slate_daemon_device:s0
 /dev/coresight-stm                    u:object_r:qdss_device:s0
 /dev/coresight-tmc-etf                u:object_r:qdss_device:s0
 /dev/coresight-tmc-etr                u:object_r:qdss_device:s0
@@ -111,6 +112,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.secure_element@1\.0-service            u:object_r:hal_secure_element_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.secure_element@1\.2-service            u:object_r:hal_secure_element_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.perf@2\.[0-2]-service        u:object_r:vendor_hal_perf_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.AGMIPC@1\.0-service          u:object_r:vendor_agmservice_qti_exec:s0
 /(vendor|system/vendor)/bin/mm-audio-ftm                                           u:object_r:vendor_audioftm_exec:s0
 /(vendor|system/vendor)/bin/qrtr-ns                                                u:object_r:vendor_qrtr_exec:s0
 /(vendor|system/vendor)/bin/spdaemon                                               u:object_r:vendor_spdaemon_exec:s0
@@ -160,6 +162,7 @@
 /(vendor|system/vendor)/bin/garden_app                                             u:object_r:vendor_location_exec:s0
 /(vendor|system/vendor)/bin/DR_AP_Service                                          u:object_r:vendor_location_exec:s0
 /(vendor|system/vendor)/bin/slim_daemon                                            u:object_r:vendor_location_exec:s0
+/(vendor|system/vendor)/bin/edgnss-daemon                                          u:object_r:vendor_location_exec:s0
 
 #bluetooth
 /vendor/bin/hw/vendor\.qti\.hardware\.bluetooth_dun@1\.0-service                   u:object_r:vendor_hal_bluetooth_dun_qti_exec:s0
@@ -282,5 +285,5 @@
 /sys/devices/platform/soc/soc:qcom,blackghost/subsys[0-6]+/name         u:object_r:vendor_sysfs_ssr:s0
 /sys/devices/platform/soc/soc:qcom,blackghost/subsys[0-6]+/state        u:object_r:vendor_sysfs_ssr:s0
 /(vendor|system/vendor)/bin/bg_daemon                                   u:object_r:bg_daemon_exec:s0
-
+/(vendor|system/vendor)/bin/slatedaemon                                 u:object_r:slate_daemon_exec:s0
 
