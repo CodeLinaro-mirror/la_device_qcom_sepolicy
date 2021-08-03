@@ -33,3 +33,7 @@ ro.netflix.bsp_rev                 u:object_r:vendor_exported_system_prop:s0 exa
 
 # Beluga
 ro.vendor.beluga.                         u:object_r:vendor_exported_system_prop:s0
+
+# KEYSTONE(I1e43e4fdff3df409e28a60b6940af8834774c927,b/185406969)
+ro.board.api_level u:object_r:exported_default_prop:s0 exact int
+ro.board.first_api_level u:object_r:exported_default_prop:s0 exact int
