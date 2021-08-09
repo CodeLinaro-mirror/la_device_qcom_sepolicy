@@ -35,7 +35,7 @@ userdebug_or_eng(`
   get_prop(hal_sensors_default, sensors_dbg_prop)
 ')
 
-allow hal_sensors_default qdsp_device:chr_file r_file_perms;
+# acess to ADSP/SLPI
 allow hal_sensors_default xdsp_device:chr_file r_file_perms;
 
 allow hal_sensors sysfs_data:file r_file_perms;
