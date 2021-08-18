@@ -63,3 +63,4 @@ vendor.qti.hardware.trustedui::ITrustedInput              u:object_r:hal_trusted
 android.hardware.media.c2::IConfigurable                     u:object_r:hal_codec2_hwservice:s0
 vendor.qti.hardware.display.mapper::IQtiMapper               u:object_r:hal_graphics_mapper_hwservice:s0
 vendor.qti.hardware.camera.postproc::IPostProcService        u:object_r:hal_camera_postproc_hwservice:s0
+vendor.qti.automotive.qcarcam::IQcarCamera                   u:object_r:hal_ais_hwservice:s0

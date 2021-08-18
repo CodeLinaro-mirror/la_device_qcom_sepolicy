@@ -44,3 +44,4 @@ type hal_display_color_hwservice, hwservice_manager_type;
 type hal_display_postproc_hwservice, hwservice_manager_type;
 type hal_capabilityconfigstore_qti_hwservice, hwservice_manager_type;
 type hal_camera_postproc_hwservice, hwservice_manager_type;
+type hal_ais_hwservice, hwservice_manager_type;
