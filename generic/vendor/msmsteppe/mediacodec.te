@@ -27,3 +27,6 @@
 
 get_prop(mediacodec, vendor_media_sm6150_version_prop)
 get_prop(mediacodec, vendor_media_sdmmagpie_version_prop)
+
+allow mediacodec xdsp_device:chr_file r_file_perms;
+allow mediacodec qdsp_device:chr_file r_file_perms;
