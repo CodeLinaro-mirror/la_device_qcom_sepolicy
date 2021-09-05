@@ -61,7 +61,8 @@
 /dev/coresight-tmc-etr-stream         u:object_r:qdss_device:s0
 /dev/wcnss_ctrl                                 u:object_r:wcnss_device:s0
 /dev/wcnss_wlan                                 u:object_r:wcnss_device:s0
-
+/dev/glink_pkt_slate_display_ctrl               u:object_r:glink_slate_display_ctrl_device:s0
+/dev/glink_pkt_slate_display_data               u:object_r:glink_slate_display_data_device:s0
 
 ###################################
 # Dev socket nodes
@@ -108,6 +109,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.soter@1\.0-service           u:object_r:vendor_hal_soter_qti_exec:s0
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator@1\.[0-3]-service                    u:object_r:hal_vibrator_default_exec:s0
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service                            u:object_r:hal_vibrator_default_exec:s0
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.offload\.service                   u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.power\.pasrmanager\@1\.0-service       u:object_r:vendor_hal_pasrmanager_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.memory\.pasrmanager\@1\.0-service      u:object_r:vendor_pasrmanager_memory_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.psiclient\@1\.0-service                u:object_r:vendor_psiservice_exec:s0
@@ -285,7 +287,11 @@
 /(vendor|system/vendor)/bin/wifilearner    u:object_r:vendor_wifilearnersvc_exec:s0
 
 /sys/devices/platform/soc/soc:qcom,blackghost/subsys[0-6]+/name         u:object_r:vendor_sysfs_ssr:s0
+/sys/devices/platform/soc/soc:qcom,slate/subsys[0-6]+/name              u:object_r:vendor_sysfs_ssr:s0
 /sys/devices/platform/soc/soc:qcom,blackghost/subsys[0-6]+/state        u:object_r:vendor_sysfs_ssr:s0
+/sys/devices/platform/soc/soc:qcom,slate/subsys[0-6]+/state             u:object_r:vendor_sysfs_ssr:s0
 /(vendor|system/vendor)/bin/bg_daemon                                   u:object_r:bg_daemon_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.displayoffload@1\.0-service      u:object_r:hal_displayoffload_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.aonutility@1\.0-service      u:object_r:hal_aonutility_default_exec:s0
 /(vendor|system/vendor)/bin/slatedaemon                                 u:object_r:slate_daemon_exec:s0
 

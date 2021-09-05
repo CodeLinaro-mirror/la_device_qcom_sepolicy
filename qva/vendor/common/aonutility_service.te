@@ -1,4 +1,4 @@
-# Copyright (c) 2017, The Linux Foundation. All rights reserved.
+# Copyright (c) 2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -25,16 +25,14 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-type vendor_persist_dpm_prop, property_type, extended_core_property_type;
-type vendor_persist_camera_prop, property_type, extended_core_property_type;
+type aonutility_service, domain;
 
-# this is vendor defined property  and added with prefix vendor
-# which is going to be working from system
-type vendor_bt_prop, property_type, extended_core_property_type;
+# Domain to run AONUtility Service (com.qualcomm.qti.aonutility)
+app_domain(aonutility_service)
 
-type vendor_sys_video_prop, property_type, extended_core_property_type;
+# Allow AONUtility Service to access certain system services.
+allow aonutility_service activity_service:service_manager find;
+allow aonutility_service surfaceflinger_service:service_manager find;
 
-#mm-parser
-type vendor_mm_parser_prop, property_type, extended_core_property_type;
-
-type vendor_wlc_prop, property_type, extended_core_property_type;
+# Allow AONUtility Service to be the client AONUtility HAL
+hal_client_domain(aonutility_service, hal_aonutility);

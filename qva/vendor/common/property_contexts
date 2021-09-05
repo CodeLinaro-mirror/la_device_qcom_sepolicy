@@ -70,6 +70,7 @@ vendor.sys.boot_mode                         u:object_r:vendor_boot_mode_prop:s0
 vendor.media.target.version                  u:object_r:vendor_video_prop:s0
 vendor.video.disable.ubwc                    u:object_r:vendor_video_prop:s0
 vendor.media.target_variant                  u:object_r:vendor_video_prop:s0
+vendor.mm.target.enable.qcom_parser          u:object_r:vendor_video_prop:s0
 
 # factory properties
 ctl.vendor.mmid                              u:object_r:vendor_ctl_vendor_mmid_prop:s0
@@ -154,6 +155,8 @@ persist.vendor.skghal.debug.crashOnError     u:object_r:vendor_skghal_debug_cras
 persist.vendor.skghal.debug.glink_read_timeout   u:object_r:vendor_skghal_debug_glink_read_timeout_prop:s0
 
 persist.vendor.skghal.logs.level    	     u:object_r:vendor_skghal_logging_prop:s0
+
+persist.vendor.uioffload.logs.level          u:object_r:vendor_uioffload_logging_prop:s0
 
 ro.boot.vendor.lefty          		     u:object_r:vendor_lefty_prop:s0
 

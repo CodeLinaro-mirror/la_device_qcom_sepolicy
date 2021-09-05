@@ -28,3 +28,13 @@
 attribute wifidisplayhalservice;
 attribute wifidisplayhalservice_client;
 attribute wifidisplayhalservice_server;
+
+# Display offload HAL
+attribute hal_displayoffload;
+attribute hal_displayoffload_client;
+attribute hal_displayoffload_server;
+
+# AONUtility HAL
+attribute hal_aonutility;
+attribute hal_aonutility_client;
+attribute hal_aonutility_server;
