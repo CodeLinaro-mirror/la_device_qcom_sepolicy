@@ -400,3 +400,4 @@ type vendor_sysfs_usb_node, fs_type, sysfs_type;
 
 #sysfs video4linux
 type sysfs_v4l, fs_type, sysfs_type;
+
