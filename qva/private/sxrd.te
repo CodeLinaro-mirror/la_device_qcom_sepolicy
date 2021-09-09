@@ -68,3 +68,8 @@ binder_use(vendor_sys_sxrd)
 
 #allow finding sxrhalservice
 hal_client_domain(vendor_sys_sxrd ,vendor_sxrhalservice)
+
+#add sxrd to access tombstoned
+userdebug_or_eng(`
+  crash_dump_fallback(vendor_sys_sxrd);
+')
