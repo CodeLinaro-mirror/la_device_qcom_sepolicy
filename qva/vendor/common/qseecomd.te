@@ -1,4 +1,4 @@
-# Copyright (c) 2018, 2021 The Linux Foundation. All rights reserved.
+# Copyright (c) 2018, 2021, 2022 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -77,6 +77,7 @@ allow tee vendor_time_daemon:unix_stream_socket connectto;
 allow tee vendor_qsee_ipc_irq_spss_device:chr_file rw_file_perms;
 allow tee tee_device:chr_file rw_file_perms;
 hal_client_domain(tee, vendor_hal_soter);
+hal_client_domain(tee, vendor_hal_powerstateservice);
 unix_socket_connect(tee, property, init)
 # Allow access to qsee data file
 allow tee vendor_data_qsee_file:dir create_dir_perms;
@@ -97,3 +98,9 @@ allow tee vendor_persist_qti_fp_file:file create_file_perms;
 
 allowxperm tee vendor_rpmb_device:blk_file ioctl { MMC_IOC_CMD };
 allowxperm tee vendor_rpmb_device:chr_file ioctl {MMC_IOC_MULTI_CMD};
+
+allow tee { vendor_shell_exec vendor_toolbox_exec }:file execute_no_trans;
+
+allow tee { vendor_hal_keymaster_qti vendor_hal_gatekeeper_qti }:file { read open };
+allow tee { vendor_hal_keymaster_qti vendor_hal_gatekeeper_qti }:process sigkill;
+allow tee { vendor_hal_keymaster_qti vendor_hal_gatekeeper_qti }:dir search;
