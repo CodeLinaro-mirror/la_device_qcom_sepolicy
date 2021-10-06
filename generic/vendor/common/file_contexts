@@ -214,6 +214,7 @@
 
 /vendor/bin/hw/vendor\.display\.color@1\.0-service            u:object_r:vendor_hal_display_color_default_exec:s0
 /vendor/bin/hw/vendor\.qti\.media\.c2@1\.0-service               u:object_r:mediacodec_exec:s0
+/vendor/bin/hw/vendor\.qti\.media\.c2audio@1\.0-service          u:object_r:mediacodec_exec:s0
 /vendor/bin/hw/hardware\.google\.media\.c2@1\.0-service-software u:object_r:mediacodec_exec:s0
 /vendor/bin/feature_enabler_client          u:object_r:vendor_feature_enabler_client_exec:s0
 /(vendor|system/vendor)/bin/qdcmss              u:object_r:vendor_qdcm-ss_exec:s0
@@ -470,6 +471,9 @@
 /sys/devices(/platform)?/soc/[a-f0-9]+.ufshc/auto_hibern8           u:object_r:vendor_sysfs_scsi_host:s0
 /sys/devices(/platform)?/soc/[a-f0-9]+/host0/scsi_host/host0(/.*)?  u:object_r:vendor_sysfs_scsi_host:s0
 /sys/devices(/platform)?/soc/[a-f0-9]+.ufshc/host0/target0:0:0/0:0:0:[0-9]+/scsi_generic(/.*)?     u:object_r:vendor_sysfs_scsi_target:s0
+
+# vendor_sysfs_boot_concurrenct_mode
+/sys/class/qcom-smb/boost_concurrent_mode  u:object_r:vendor_sysfs_boost_concurrent_mode:s0
 
 # VM Neuron block device mapping node
 /sys/devices/platform/soc/soc:qcom,svm_neuron_block/soc:qcom,svm_neuron_block:application/blk_name  u:object_r:vendor_sysfs_svm_neuron:s0
