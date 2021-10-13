@@ -29,3 +29,4 @@
 
 /system/etc/init\.qcom\.testscripts\.sh         u:object_r:qti-testscripts_exec:s0
 /system/bin/init\.qcom\.display\.sh             u:object_r:qti-display_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.[0-9]+-external-service_64             u:object_r:hal_camera_default_exec:s0
