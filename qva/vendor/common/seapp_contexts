@@ -33,3 +33,6 @@ user=_app seinfo=platform name=.pasr domain=vendor_powerservice_app type=app_dat
 
 #Add new domain for AONutility service
 user=_app seinfo=platform name=com.qualcomm.qti.aonutility domain=aonutility_service type=app_data_file levelFrom=all
+
+#Add new domain for powerstatemanager services
+user=_app seinfo=platform name=com.qualcomm.qti.powerstatemanagerservice domain=powerstatemanager_service type=app_data_file levelFrom=all

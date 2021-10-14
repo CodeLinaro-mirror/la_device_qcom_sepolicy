@@ -63,6 +63,7 @@
 /dev/wcnss_wlan                                 u:object_r:wcnss_device:s0
 /dev/glink_pkt_slate_display_ctrl               u:object_r:glink_slate_display_ctrl_device:s0
 /dev/glink_pkt_slate_display_data               u:object_r:glink_slate_display_data_device:s0
+/dev/power_state                      u:object_r:vendor_power_state_device:s0
 
 ###################################
 # Dev socket nodes
@@ -103,6 +104,8 @@
 /vendor/bin/hw/vendor\.qti\.hardware\.qteeconnector@1\.0-service                   u:object_r:vendor_hal_qteeconnector_qti_exec:s0
 /vendor/bin/hw/vendor\.qti\.hardware\.qseecom@1\.0-service                         u:object_r:vendor_hal_qseecom_default_exec:s0
 /vendor/bin/hw/vendor\.qti\.hardware\.scve\.objecttracker@1\.0-service             u:object_r:vendor_scve_exec:s0
+/vendor/bin/hw/vendor\.qti\.hardware\.powerstateservice@1\.0-service               u:object_r:vendor_hal_powerstateservice_qti_exec:s0
+/vendor/bin/hw/vendor\.qti\.hardware\.powerstateutility@1\.0-service               u:object_r:vendor_hal_powerstateutility_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.spu@1\.[0-1]-service                   u:object_r:vendor_hal_spu_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.scve\.panorama@1\.0-service  u:object_r:vendor_scve_exec:s0
 /vendor/bin/hw/vendor\.qti\.hardware\.sensorscalibrate@1\.0-service                u:object_r:vendor_hal_sensorscalibrate_qti_default_exec:s0
@@ -222,6 +225,7 @@
 
 /sys/devices(/platform)?/soc/soc:qcom,gpubw/devfreq/soc:qcom,gpubw(/.*)? u:object_r:vendor_sysfs_devfreq:s0
 /sys/class/kgsl/kgsl/proc(/.*)?                                    u:object_r:vendor_sysfs_kgsl_proc:s0
+/sys/class/pmic-lpm/pmic_twm_enable                                u:object_r:vendor_sysfs_twm:s0
 
 /sys/devices(/platform)?/soc/soc:qcom,spss_utils(/.*)?             u:object_r:vendor_sysfs_spss:s0
 /sys/devices(/platform)?/soc/[a-f0-9]+.qcom,vidc/sku_version       u:object_r:vendor_sysfs_sku:s0
@@ -292,6 +296,8 @@
 /sys/devices/platform/soc/soc:qcom,slate/subsys[0-6]+/state             u:object_r:vendor_sysfs_ssr:s0
 /(vendor|system/vendor)/bin/bg_daemon                                   u:object_r:bg_daemon_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.displayoffload@1\.0-service      u:object_r:hal_displayoffload_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.displayoffload@1\.1-service      u:object_r:hal_displayoffload_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.aonutility@1\.0-service      u:object_r:hal_aonutility_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.uioffload@1\.0-service      u:object_r:hal_uioffload_default_exec:s0
 /(vendor|system/vendor)/bin/slatedaemon                                 u:object_r:slate_daemon_exec:s0
 

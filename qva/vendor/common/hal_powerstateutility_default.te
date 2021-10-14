@@ -1,4 +1,4 @@
-# Copyright (c) 2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2021, The Linux Foundation. All rights reserved.
 
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -25,9 +25,24 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#allow priv_app to access hal_qspmhal
-hal_client_domain(priv_app, vendor_hal_qspmhal)
+#Define Domain
+type vendor_hal_powerstateutility_qti, domain;
+#mark as hal server domain
+hal_server_domain(vendor_hal_powerstateutility_qti, vendor_hal_powerstateutility)
 
-#allow priv_app to access Display offload hal
-hal_client_domain(priv_app, hal_displayoffload)
+type vendor_hal_powerstateutility_qti_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_powerstateutility_qti)
 
+#allow hwbinder call bw client and server
+binder_call(vendor_hal_powerstateutility_client, vendor_hal_powerstateutility_server)
+binder_call(vendor_hal_powerstateutility_server, vendor_hal_powerstateutility_client)
+
+#allow service to be added to hwservice list
+hal_attribute_hwservice(vendor_hal_powerstateutility, vendor_hal_powerstateutility_hwservice)
+
+#allow service to communicate with drop_caches node
+allow vendor_hal_powerstateutility_qti proc_drop_caches:file rw_file_perms;
+
+#allow service to communicate with sysfs nodes
+allow vendor_hal_powerstateutility_qti sysfs_power:file rw_file_perms;
+allow vendor_hal_powerstateutility_qti sysfs_power_disk:file rw_file_perms;
