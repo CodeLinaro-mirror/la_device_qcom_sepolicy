@@ -138,3 +138,10 @@ attribute hal_wificfr_server;
 attribute vendor_sxrhalservice;
 attribute vendor_sxrhalservice_client;
 attribute vendor_sxrhalservice_server;
+
+attribute vendor_hal_sxrservice_qti;
+attribute vendor_hal_sxrservice_qti_client;
+attribute vendor_hal_sxrservice_qti_server;
+attribute vendor_hal_sxrservice_qti_socket_client;
+attribute vendor_hal_sxrservice_qti_socket_fd_use_client;
+attribute vendor_sys_sxrauxservice_qti_socket_client;
