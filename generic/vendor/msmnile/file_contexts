@@ -83,6 +83,7 @@
 /dev/block/platform/soc/1d84000.ufshc/by-name/tz_[ab]               u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/vbmeta_[ab]           u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/recovery_[ab]         u:object_r:recovery_block_device:s0
+/dev/block/platform/soc/1d84000.ufshc/by-name/early_services_[ab]    u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/vbmeta_system_[ab]    u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/vbmeta_product_[ab]   u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/vendor_[ab]           u:object_r:system_block_device:s0
