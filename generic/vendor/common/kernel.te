@@ -34,6 +34,7 @@ userdebug_or_eng(`
 
 # Access firmware_file
 r_dir_file(kernel, firmware_file)
+allow kernel firmware_file:filesystem  { relabelto relabelfrom  mount };
 
 
 # access vendor_firmware_file
@@ -47,6 +48,7 @@ allow kernel persist_file:dir search;
 #we need to allow kernel access to early services directory to
 #re-exec early init.
 allow kernel early_services:dir r_dir_perms;
+allow kernel early_services:file r_file_perms;
 
 #Allow early init first stage to log to kmesg
 #To be removed once restorecon is up
@@ -58,3 +60,8 @@ allow kernel proc_cmdline:file r_file_perms;
 
 allow kernel sepolicy_file:file r_file_perms;
 
+allow kernel self:capability mknod;
+allow kernel device:dir create_dir_perms;
+allow kernel device:chr_file { create setattr };
+allow kernel audio_device:dir create_dir_perms;
+allow kernel audio_device:chr_file { create setattr };
