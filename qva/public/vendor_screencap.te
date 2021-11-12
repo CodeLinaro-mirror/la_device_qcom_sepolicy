@@ -49,5 +49,3 @@ allow vendor_screencap mnt_user_file:dir r_dir_perms;
 allow vendor_screencap mnt_user_file:lnk_file r_file_perms;
 allow vendor_screencap sdcard_type:dir create_dir_perms;
 allow vendor_screencap sdcard_type:file create_file_perms;
-
-allow vendor_screencap adbd:unix_stream_socket { getattr ioctl };
