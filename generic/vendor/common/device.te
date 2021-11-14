@@ -58,6 +58,7 @@ type spcom_device, dev_type;
 type ssd_block_device, dev_type;
 type ssr_device, dev_type;
 type synx_device, dev_type;
+type hdmi_bdg_irq_device, dev_type;
 type wlan_device, dev_type;
 type xbl_block_device, dev_type;
 type uefi_block_device, dev_type;
