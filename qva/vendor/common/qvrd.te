@@ -95,3 +95,6 @@ r_dir_file(qvrd, sysfs_battery_supply);
 #allow qvrd to access video4linux
 allow qvrd sysfs_v4l:dir { open getattr read search };
 allow qvrd sysfs_v4l:file { getattr open read };
+
+#allow qvrd to access hidg nodes
+allow qvrd hidg_device:chr_file { getattr open read write };
