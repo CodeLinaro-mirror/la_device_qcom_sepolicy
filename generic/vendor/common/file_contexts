@@ -73,6 +73,7 @@
 /dev/synx_device                                u:object_r:synx_device:s0
 /dev/ipa_odl_ctl                                u:object_r:ipa_dev:s0
 /dev/ipa_adpl                                   u:object_r:ipa_dev:s0
+/dev/hdmi_bdg_irq_handler                       u:object_r:hdmi_bdg_irq_device:s0
 
 # dev socket nodes
 /dev/socket/chre                                u:object_r:chre_socket:s0
