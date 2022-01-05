@@ -1,17 +1,17 @@
-# Copyright (c) 2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2019 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
 # met:
-#     * Redistributions of source code must retain the above copyright
-#       notice, this list of conditions and the following disclaimer.
-#     * Redistributions in binary form must reproduce the above
-#       copyright notice, this list of conditions and the following
-#       disclaimer in the documentation and/or other materials provided
-#       with the distribution.
-#     * Neither the name of The Linux Foundation nor the names of its
-#       contributors may be used to endorse or promote products derived
-#       from this software without specific prior written permission.
+#    * Redistributions of source code must retain the above copyright
+#      notice, this list of conditions and the following disclaimer.
+#    * Redistributions in binary form must reproduce the above
+#      copyright notice, this list of conditions and the following
+#      disclaimer in the documentation and/or other materials provided
+#      with the distribution.
+#    * Neither the name of The Linux Foundation nor the names of its
+#      contributors may be used to endorse or promote products derived
+#      from this software without specific prior written permission.
 #
 # THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
 # WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
@@ -60,8 +60,4 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-#Add new domain for DataServices
-# Needed for CNEService , uceShimService and other connectivity services
-user=radio seinfo=platform name=.dataservices domain=dataservice_app type=radio_data_file
-#Add new domain for QCC
-user=system seinfo=platform name=com.qualcomm.qti.qdma2 isPrivApp=true domain=vendor_qcc_app type=system_app_data_file
+vendor_qtrsdkservice 	u:object_r:vendor_qtrsdkservice_service:s0
