@@ -1,4 +1,4 @@
-# Copyright (c) 2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2020-2021 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -60,8 +60,38 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-#Add new domain for DataServices
-# Needed for CNEService , uceShimService and other connectivity services
-user=radio seinfo=platform name=.dataservices domain=dataservice_app type=radio_data_file
-#Add new domain for QCC
-user=system seinfo=platform name=com.qualcomm.qti.qdma2 isPrivApp=true domain=vendor_qcc_app type=system_app_data_file
+type vendor_qccsyshal_qti, domain, coredomain, mlstrustedsubject;
+type vendor_qccsyshal_qti_exec, system_file_type , exec_type, file_type;
+
+hal_server_domain(vendor_qccsyshal_qti, vendor_qccsyshal);
+
+#Add hwservice related rules
+hal_attribute_hwservice(vendor_qccsyshal, vendor_qccsyshal_hwservice);
+
+#Allow for transition from init domain to qccsyshal
+init_daemon_domain(vendor_qccsyshal_qti)
+
+#Allow the interaction with servicemanager
+binder_use(vendor_qccsyshal_qti)
+
+#Allow hwbinder call from hal client to server
+binder_call(vendor_qccsyshal_client, vendor_qccsyshal_server)
+binder_call(vendor_qccsyshal_server, vendor_qccsyshal_client)
+
+allow vendor_qccsyshal_client vendor_qccsyshal_hwservice:hwservice_manager find;
+
+# allow access to qdma dropbox (/data/misc/qdma)
+allow vendor_qccsyshal_qti vendor_qcc_data_file:dir create_dir_perms;
+allow vendor_qccsyshal_qti vendor_qcc_data_file:file create_file_perms;
+
+# allow access to vendor_qcc_app_socket
+unix_socket_connect(vendor_qccsyshal_qti, vendor_qcc_app, vendor_qcc_app)
+allow vendor_qccsyshal_qti vendor_qcc_app_socket:dir r_dir_perms;
+allow vendor_qccsyshal_qti vendor_qcc_app_socket:sock_file rw_file_perms;
+
+#userdebug_or_eng(`
+ # allow vendor_qccsyshal_qti vendor_qcc_lmtp_app:unix_stream_socket connectto;
+#')
+#allow vendor_qccsyshal_qti vendor_qcc_netstat_app:unix_stream_socket connectto;
+
+add_service(vendor_qccsyshal_qti, qtrservice)
