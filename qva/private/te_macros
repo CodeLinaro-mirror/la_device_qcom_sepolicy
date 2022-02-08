@@ -77,5 +77,5 @@ allow $1 qtrservice:service_manager find;
 binder_call($1, vendor_qccsyshal_qti);
 binder_call(vendor_qccsyshal_qti, $1);
 # Allow access to ion device for using FD transfer
-allow $1 ion_device:chr_file rw_file_perms;
+allow $1 ion_device:chr_file r_file_perms;
 ')
