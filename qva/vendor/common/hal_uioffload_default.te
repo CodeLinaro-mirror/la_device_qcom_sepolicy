@@ -80,6 +80,8 @@ allow hal_uioffload_default vendor_qdisplay_service:service_manager find;
 set_prop(hal_uioffload_default, vendor_slate_boot_complete_prop)
 get_prop(hal_uioffload_default, vendor_uioffload_logging_prop)
 
+set_prop(hal_uioffload_default, vendor_lefty_prop)
+
 get_prop(hal_uioffload_default, qc_aon_prop)
 
 get_prop(hal_uioffload_default, vendor_watch_orientation_prop)
