@@ -38,3 +38,4 @@ genfscon sysfs /devices/soc/7824900.sdhci/leds/mmc0:: u:object_r:sysfs_led_devic
 genfscon sysfs /devices/soc/7864900.sdhci/leds/mmc1:: u:object_r:sysfs_led_device:s0
 genfscon sysfs /devices/soc/qpnp-linear-charger-8/leds/red u:object_r:sysfs_led_device:s0
 genfscon sysfs /devices/soc/1a00000.qcom,mdss_mdp/1a00000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight u:object_r:sysfs_led_device:s0
+genfscon sysfs /class/kgsl/kgsl-3d0/perfcounter u:object_r:sysfs_kgsl_shell:s0
