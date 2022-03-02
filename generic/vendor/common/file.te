@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2020 The Linux Foundation. All rights reserved.
+# Copyright (c) 2018-2021 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -207,3 +207,6 @@ type sysfs_kgsl_gpu_model, sysfs_type, fs_type;
 
 # kgsl_gpuclk file type for sysfs access
 type sysfs_kgsl_gpuclk, sysfs_type, fs_type;
+
+# sysfs video4linux
+type sysfs_v4l, sysfs_type, fs_type;
