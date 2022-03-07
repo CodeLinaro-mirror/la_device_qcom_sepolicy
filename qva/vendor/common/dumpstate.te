@@ -37,3 +37,8 @@ allow dumpstate bt_firmware_file:filesystem getattr;
 allow dumpstate firmware_file:dir getattr;
 allow dumpstate firmware_file:filesystem getattr;
 dontaudit dumpstate sysfs:file *;
+allow dumpstate hal_audiocontrol_qti:process signal;
+allow dumpstate hal_automotive_vehicle_qti:process signal;
+allow dumpstate debugfs_mmc:dir search;
+allow dumpstate early_services:dir search;
+allow dumpstate early_services:dir getattr;
