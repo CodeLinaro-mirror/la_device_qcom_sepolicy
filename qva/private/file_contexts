@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+# Copyright (c) 2018-2021 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -43,6 +43,7 @@
 /(product|system_ext|system/system_ext)/bin/dpmd  u:object_r:vendor_dpmd_exec:s0
 /system/bin/qvrservice                          u:object_r:vendor_qvrd_exec:s0
 /system/bin/vpsservice                          u:object_r:vendor_vpsservice_exec:s0
+/system/bin/hyp_dvr_hidl_client                 u:object_r:vendor_hyp_dvr_hidl_client_exec:s0
 
 ####### system_ext file ###############
 /(system_ext|system/system_ext)/bin/dun-server  u:object_r:vendor_dun-server_exec:s0
@@ -53,7 +54,6 @@
 /(system_ext|system/system_ext)/bin/qccsyshalservice  u:object_r:vendor_qccsyshal_qti_exec:s0
 /(system_ext|system/system_ext)/bin/mmi         u:object_r:vendor_mmi_sys_exec:s0
 /(system_ext|system/system_ext)/bin/mmi_diag    u:object_r:vendor_mmi_sys_exec:s0
-
 
 ####### data files ################
 /data/dpm(/.*)?                                 u:object_r:vendor_dpmd_data_file:s0
