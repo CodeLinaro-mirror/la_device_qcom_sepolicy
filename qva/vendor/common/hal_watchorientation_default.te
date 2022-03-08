@@ -40,5 +40,7 @@ init_daemon_domain(hal_watchorientation_default)
 
 allow hal_watchorientation_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
+get_prop(hal_watchorientation_default, vendor_watch_orientation_prop)
+
 #wakelock policy
 wakelock_use(hal_watchorientation_default);
