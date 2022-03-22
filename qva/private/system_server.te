@@ -62,3 +62,6 @@ set_prop(system_server, vendor_fst_prop)
 # Allow system server to access for dpm
 get_prop(system_server, vendor_persist_dpm_prop)
 
+# Allow system server to read Bluetooth properties
+get_prop(system_server, bluetooth_prop)
+
