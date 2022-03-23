@@ -64,3 +64,4 @@
 
 ####### evs test app ##############
 /system/bin/evs_ais_app                         u:object_r:vendor_evs_ais_app_exec:s0
+/system/bin/android\.automotive\.evs\.manager@1\.1         u:object_r:evs_manager_exec:s0
