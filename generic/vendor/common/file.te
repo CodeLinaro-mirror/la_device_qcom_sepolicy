@@ -204,6 +204,9 @@ type vendor_time_data_file, file_type, data_file_type;
 #data sysfs files
 type vendor_sysfs_data, fs_type, sysfs_type;
 
+#haptics sysfs files
+type vendor_sysfs_haptics, fs_type, sysfs_type;
+
 #diag sysfs files
 type vendor_sysfs_diag, fs_type, sysfs_type;
 
