@@ -26,3 +26,4 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 type vendor_cne_service,                 service_manager_type;
 type vendor_offload_service,            app_api_service, system_server_service, service_manager_type;
+type vendor_suspend_service,            app_api_service, system_server_service, service_manager_type;

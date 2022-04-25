@@ -104,6 +104,9 @@ hal_client_domain(system_server, hal_uioffload);
 # allow system_server to access AONUtility hal
 hal_client_domain(system_server, hal_aonutility);
 
+# allow system_server to access power state service hal
+hal_client_domain(system_server, vendor_hal_powerstateservice);
+
 # allow system_server to access Wrist Orientation
 hal_client_domain(system_server, hal_wristorientation);
 
