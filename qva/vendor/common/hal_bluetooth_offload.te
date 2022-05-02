@@ -57,3 +57,6 @@ allow vendor_hal_bluetooth_offload vendor_glink_slate_bt:chr_file rw_file_perms;
 #Allow bluetooth_offload to access vendor files
 allow vendor_hal_bluetooth_offload_qti vendor_bt_data_file:dir create_dir_perms;
 allow vendor_hal_bluetooth_offload_qti vendor_bt_data_file:file create_file_perms;
+
+#to read bluetooth prop
+get_prop(vendor_hal_bluetooth_offload, vendor_bluetooth_prop);
