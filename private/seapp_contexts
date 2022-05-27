@@ -1,2 +1,6 @@
 #add new domain for DataServices
 user=system seinfo=platform name=.dataservices domain=dataservice_app type=system_app_data_file
+
+#add new domain for xrauxservice
+user=system seinfo=platform name=com.qualcomm.qti.xrauxservice.service:remote domain=xrauxservice_app type=app_data_file  levelFrom=all
+user=system seinfo=platform name=com.qualcomm.qti.xrauxservice.service        domain=xrauxservice_app type=app_data_file  levelFrom=all

@@ -118,3 +118,16 @@ allow qvrd hid_device:chr_file rw_file_perms;
 
 #allow qvrd to r/w sysfs_vxr7200
 allow qvrd sysfs_vxr7200:file rw_file_perms;
+
+#allow qvrd to read/write DP_NODE and USB_NODE
+allow qvrd vendor_sysfs_usb_node:file rw_file_perms;
+allow qvrd sysfs_usbpd_device:dir r_dir_perms;
+allow qvrd sysfs_usbpd_device:file rw_file_perms;
+
+#allow qvrd to access video4linux
+allow qvrd sysfs_v4l:dir r_dir_perms;
+allow qvrd sysfs_v4l:file r_file_perms;
+
+#allow qvrd to find thermal service
+allow qvrd hal_thermal_hwservice:hwservice_manager find;
+binder_call(qvrd, hal_thermal_default);
