@@ -74,3 +74,9 @@ r_dir_file(wcnss_service, storage_file)
 r_dir_file(wcnss_service, mnt_user_file)
 ')
 
+allow wcnss_service property_socket:sock_file write;
+allow wcnss_service sysfs_soc:dir r_dir_perms;
+
+allow wcnss_service wifi_vendor_wpa_socket:dir create_dir_perms;
+allow wcnss_service wifi_vendor_wpa_socket:sock_file create_file_perms;
+allow wcnss_service wifi_vendor_wpa_socket:file create_file_perms;
