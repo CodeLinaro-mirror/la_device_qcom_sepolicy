@@ -1,4 +1,5 @@
 # Copyright (c) 2018, 2021, The Linux Foundation. All rights reserved.
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -30,6 +31,10 @@ allow hal_vibrator_default sysfs_leds:file rw_file_perms;
 # read-only permission to obtain the calibration data
 r_dir_file(hal_vibrator_default, vendor_persist_haptics_file)
 allow hal_vibrator_default mnt_vendor_file:dir search;
+
+# read/write permissions to haptics sysfs node
+r_dir_file(hal_vibrator_default, vendor_sysfs_haptics)
+allow hal_vibrator_default vendor_sysfs_haptics:file rw_file_perms;
 
 # read/write permissions to offload haptics patterns
 r_dir_file(hal_vibrator_default, vendor_glink_slate_haptics_offload_device)
