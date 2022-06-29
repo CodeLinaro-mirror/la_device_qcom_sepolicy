@@ -37,6 +37,7 @@ app_domain(offload_sensor_service)
 
 # Allow OffloadSensor Service to access certain system services.
 allow offload_sensor_service activity_service:service_manager find;
+allow offload_sensor_service app_api_service:service_manager find;
 
 # Allow OffloadSensor Service to be the client SidekickMetric HAL
 hal_client_domain(offload_sensor_service, hal_sidekickmetrics);
