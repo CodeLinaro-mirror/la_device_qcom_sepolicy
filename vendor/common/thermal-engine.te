@@ -1,3 +1,7 @@
+#Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 # Thermal-engine daemon
 type thermal-engine, domain;
 type thermal-engine_exec, exec_type, vendor_file_type, file_type;
@@ -77,3 +81,4 @@ allow thermal-engine qdsp_device:chr_file r_file_perms;
 allow thermal-engine ion_device:chr_file r_file_perms;
 
 get_prop( thermal-engine, adsprpc_prop)
+allow thermal-engine xdsp_device:chr_file r_file_perms;

@@ -24,6 +24,9 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 # media_sm6150_version_prop - to choose target version specific media_codecs.xml
 # media_sdmmagpie_version_prop - to choose target version specific media_codecs.xml
@@ -32,3 +35,5 @@ allow qti_init_shell {
     vendor_media_sdmmagpie_version_prop
     vendor_chre_enabled_prop
 }:property_service set;
+dontaudit qti_init_shell self:capability dac_override;
+dontaudit qti_init_shell default_prop:file read;
