@@ -62,3 +62,6 @@ dontaudit hal_gnss_qti self:udp_socket create;
 
 # Allow Gnss HAL to get updates from vehicle hal
 hal_client_domain(hal_gnss_qti, hal_vehicle)
+
+set_prop(hal_gnss_qti, vendor_gnss_fw_state)
+set_prop(hal_gnss_qti, vendor_gnss_fw_version)
