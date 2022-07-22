@@ -25,6 +25,10 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 type vendor_hsic_device, dev_type;
 type vendor_spss_utils_device, dev_type;
 type vendor_skp_device, dev_type;
@@ -70,6 +74,8 @@ type glink_slate_display_data_device, dev_type;
 
 #define glink slate_ux_ctl char device
 type glink_slate_ux_ctl_device, dev_type;
+
+type vendor_glink_slate_qcli_device, dev_type;
 
 #define power_state char device
 type vendor_power_state_device, dev_type;
