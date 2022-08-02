@@ -32,3 +32,6 @@ r_dir_file(shell, RIDL_data_file)
 # allow read access for shell
 r_dir_file(shell, qti_logkit_priv_data_file)
 r_dir_file(shell, qti_logkit_pub_data_file)
+
+# allow shell users to control kgsl perfcounters
+allow shell sysfs_kgsl_shell:file rw_file_perms;
