@@ -60,3 +60,5 @@ set_prop(vendor_init, vendor_persist_dpm_prop)
 set_prop(vendor_init, vendor_pasr_prop)
 
 set_prop(vendor_init, vendor_qc_aon_prop)
+
+set_prop(vendor_init, vendor_qc_dsframework_prop)
