@@ -42,3 +42,4 @@ dts_eagle_service                              u:object_r:dtseagleservice_servic
 com.qualcomm.qti.secota.service.SecotaNService u:object_r:secotad_service:s0
 com.qualcomm.qti.seemp.health                  u:object_r:seemp_health_daemon_service:s0
 com.qualcomm.qti.uceservice                    u:object_r:vendor_imsrcs_service:s0
+notification_offload_mgr                       u:object_r:bluetooth_manager_service:s0
