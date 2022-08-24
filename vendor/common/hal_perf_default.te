@@ -24,6 +24,9 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 type hal_perf_default, domain, mlstrustedsubject;
 hal_server_domain_bypass(hal_perf_default, hal_perf)
@@ -104,3 +107,7 @@ allow hal_perf {
 
 # Allow to self kill capability
 allow hal_perf_default self:capability { kill };
+allow hal_perf_default kernel:dir search;
+allow hal_perf_default init:dir search;
+allow hal_perf_default init:file { read open getattr };
+allow hal_perf_default kernel:file { read open getattr };

@@ -89,3 +89,6 @@ use_vendor_per_mgr(hal_audio_default);
 #allow to access boot_adsp
 allow hal_audio_default sysfs_adsp:dir search;
 allow hal_audio_default sysfs_boot_adsp:file w_file_perms;
+
+#allow to access /sys/class
+allow hal_audio_default sysfs:dir r_dir_perms;

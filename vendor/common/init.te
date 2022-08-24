@@ -1,3 +1,7 @@
+#Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 # Adding allow rule for search on /fuse
 allow init fuse:dir { search mounton };
 allow init self:capability sys_module;
@@ -61,3 +65,4 @@ allow init {
 
 allow init mnt_vendor_file:lnk_file r_file_perms;
 allow init nativetest_data_file:dir r_dir_perms;
+allow init sysfs_qvr_external_sensor:file setattr;
