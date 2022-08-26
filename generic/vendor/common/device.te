@@ -73,3 +73,4 @@ type vendor_glink_slate_ssc_hal_device, dev_type;
 type vendor_glink_slate_sso_hal_device, dev_type;
 type vendor_glink_slate_ssc_usta_device, dev_type;
 type vendor_glink_slate_haptics_offload_device, dev_type;
+type vendor_glink_slate_location_ctrl_device, dev_type;
