@@ -116,3 +116,6 @@ hal_client_domain(system_server, hal_watchorientation);
 get_prop(system_server, vendor_qspm_prop)
 
 get_prop(system_server, vendor_xlat_prop)
+
+# Allow system_server to set aon system properties
+set_prop(system_server, vendor_watch_orientation_prop)
