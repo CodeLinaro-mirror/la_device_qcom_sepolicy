@@ -40,4 +40,4 @@ wigigp2p                                       u:object_r:vendor_wigigp2p_servic
 wigig                                          u:object_r:vendor_wigig_service:s0
 display.smomoservice                           u:object_r:surfaceflinger_service:s0
 vendor.vpsservice                              u:object_r:vendor_vps_service:s0
-
+bluetooth_manager_ext                          u:object_r:bluetooth_manager_service:s0
