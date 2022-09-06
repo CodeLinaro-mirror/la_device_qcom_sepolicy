@@ -24,11 +24,11 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 attribute vendor_hal_systemhelper;
 attribute vendor_hal_systemhelper_client;
 attribute vendor_hal_systemhelper_server;
-
-attribute vendor_hal_perf;
-attribute vendor_hal_perf_client;
-attribute vendor_hal_perf_server;

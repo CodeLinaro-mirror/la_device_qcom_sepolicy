@@ -1,0 +1,22 @@
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+type vendor_perfetto_dump, domain, coredomain;
+type vendor_perfetto_dump_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(vendor_perfetto_dump)
+userdebug_or_eng(`
+  set_prop(vendor_perfetto_dump, system_prop)
+  allow vendor_perfetto_dump trace_data_file:dir rw_dir_perms;
+  allow vendor_perfetto_dump trace_data_file:file create_file_perms;
+  allow vendor_perfetto_dump shell_exec:file { rx_file_perms entrypoint };
+  allow vendor_perfetto_dump toolbox_exec:file rx_file_perms;
+  allow vendor_perfetto_dump perfetto_exec:file rx_file_perms;
+  allow vendor_perfetto_dump perfetto:fd use;
+  allow vendor_perfetto_dump shell:fd use;
+  allow vendor_perfetto_dump shell:fifo_file { read write };
+
+  allow traced vendor_perfetto_dump:fd use;
+  allow vendor_perfetto_dump traced_consumer_socket:sock_file { write read };
+  allow vendor_perfetto_dump traced:unix_stream_socket connectto;
+')

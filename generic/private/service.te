@@ -24,4 +24,23 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 type vendor_cne_service,                 service_manager_type;
+type vendor_seemp_service,               service_manager_type;
+type vendor_dpmservice,                  service_manager_type;
+type vendor_MinkBinderSvc,               app_api_service, service_manager_type;
+type vendor_perf_service,                app_api_service, service_manager_type;
+type vendor_qdt_service,                 app_api_service, service_manager_type;
+type vendor_izat_service,                app_api_service, system_api_service, service_manager_type;
+type vendor_color_service,               service_manager_type;
+type vendor_wfdservice_service,          service_manager_type;
+type vendor_wigigp2p_service,            app_api_service, system_server_service, service_manager_type;
+type vendor_wigig_service,               app_api_service, system_server_service, service_manager_type;
+type vendor_vps_service,                 app_api_service, service_manager_type;
+type vendor_qspmsvc_service,             app_api_service, service_manager_type;
+type vendor_qvirtmgr_service,            service_manager_type;
+

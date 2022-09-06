@@ -1,0 +1,27 @@
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+type vendor_sys_sxrauxd, domain;
+typeattribute vendor_sys_sxrauxd coredomain;
+typeattribute vendor_sys_sxrauxd vendor_hal_sxrservice_qti_socket_fd_use_client;
+type vendor_sys_sxrauxd_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(vendor_sys_sxrauxd)
+
+allow vendor_sys_sxrauxd vendor_sys_sxrauxservice_qti_socket_client:unix_stream_socket { getopt read setopt shutdown write };
+# Allow access to our socket
+allow vendor_sys_sxrauxd vendor_sys_sxrauxd_socket:sock_file rw_file_perms;
+
+# Allow access to sxrservice
+hal_client_domain(vendor_sys_sxrauxd, vendor_hal_sxrservice_qti);
+
+#Allow access to Audio Flinger APIs
+binder_call(vendor_sys_sxrauxd, audioserver);
+allow vendor_sys_sxrauxd audioserver_service : service_manager find;
+
+# Allow interracting with vendor_sxrauxd directory
+allow vendor_sys_sxrauxd vendor_sys_sxrauxd_data_file:dir create_dir_perms;
+allow vendor_sys_sxrauxd vendor_sys_sxrauxd_data_file:file create_file_perms;
+
+#allow binder use for checking permissions
+binder_use(vendor_sys_sxrauxd)
