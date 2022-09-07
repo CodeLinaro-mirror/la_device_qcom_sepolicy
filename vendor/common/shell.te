@@ -35,3 +35,4 @@ r_dir_file(shell, qti_logkit_pub_data_file)
 
 # allow shell permissions to perf
 get_prop(shell, vendor_mpctl_prop);
+get_prop(shell, vendor_camera_prop);
