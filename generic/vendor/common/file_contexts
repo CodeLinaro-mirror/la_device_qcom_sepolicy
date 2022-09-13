@@ -123,6 +123,9 @@
 /dev/glinkpkt_slate_ssc_usta                    u:object_r:vendor_glink_slate_ssc_usta_device:s0
 /dev/glinkpkt_slate_sso_hal                     u:object_r:vendor_glink_slate_sso_hal_device:s0
 
+#location glink dev node
+/dev/glink_pkt_slate_location_ctrl                     u:object_r:vendor_glink_slate_location_ctrl_device:s0
+
 #Vibrator offload glink dev node
 /dev/glinkpkt_slate_haptics_offload             u:object_r:vendor_glink_slate_haptics_offload_device:s0
 
