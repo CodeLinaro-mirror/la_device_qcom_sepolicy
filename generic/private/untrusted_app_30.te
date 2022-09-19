@@ -1,0 +1,5 @@
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+# allow app to be a client of DSP HAL
+hal_client_domain(untrusted_app, vendor_hal_dspmanager)
