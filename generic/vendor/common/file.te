@@ -1,4 +1,5 @@
 # Copyright (c) 2018-2020 The Linux Foundation. All rights reserved.
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -37,6 +38,7 @@ type vendor_sysfs_fingerprint, sysfs_type, fs_type;
 type vendor_sysfs_graphics, sysfs_type, fs_type;
 type vendor_sysfs_kgsl, sysfs_type, fs_type;
 type vendor_sysfs_kgsl_proc, sysfs_type, fs_type;
+type vendor_sysfs_kgsl_shell, sysfs_type, fs_type;
 type vendor_hbtp_kernel_sysfs, sysfs_type, fs_type;
 type vendor_sysfs_irqbalance, sysfs_type, fs_type;
 type vendor_sysfs_laser, sysfs_type, fs_type;
