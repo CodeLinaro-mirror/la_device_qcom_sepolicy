@@ -66,7 +66,7 @@
 
 /system/etc/init\.qcom\.testscripts\.sh         u:object_r:qti-testscripts_exec:s0
 /system/bin/init\.qcom\.display\.sh             u:object_r:qti-display_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.[0-9]+-external-service_64         u:object_r:hal_camera_default_exec:s0
-/dev/socket/qdma_app(/.*)?         u:object_r:vendor_qcc_app_socket:s0
-/system/bin/qccsyshal@1.2-service         u:object_r:vendor_qccsyshal_qti_exec:s0
-/data/misc/qdma(/.*)?         u:object_r:vendor_qcc_data_file:s0
+/dev/socket/qdma_app(/.*)?                      u:object_r:vendor_qcc_app_socket:s0
+/system/bin/qccsyshal@1.2-service				u:object_r:vendor_qccsyshal_qti_exec:s0
+/data/misc/qdma(/.*)?                           u:object_r:vendor_qcc_data_file:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.[0-9]+-external-service_64             u:object_r:hal_camera_default_exec:s0
