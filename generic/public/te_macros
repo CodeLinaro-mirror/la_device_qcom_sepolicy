@@ -1,0 +1,20 @@
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+# hal_server_domain_bypass_qssi(domain, hal_type)
+# Allow a base set of permissions required for a domain to offer a
+# HAL implementation of the specified type over HwBinder without
+# halserverdomain attribute
+#
+# For example, default implementation of Foo HAL:
+#   type hal_foo_default, domain;
+#   hal_server_domain_bypass_qssi(hal_foo_default, hal_foo)
+#
+define(`hal_server_domain_bypass_qssi', `
+hwbinder_use($1)
+allow $1 system_file:dir r_dir_perms;
+get_prop($1, hwservicemanager_prop)
+typeattribute $1 $2_server;
+typeattribute $1 $2;
+typeattribute $1 system_halserverdomain;
+')
