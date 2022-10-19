@@ -75,3 +75,6 @@
 /data/nfc(/.*)?                                 u:object_r:nfc_data_file:s0
 /data/misc/qdma(/.*)?                           u:object_r:vendor_qcc_data_file:s0
 /data/misc/sxraux(/.*)?                         u:object_r:vendor_sys_sxrauxd_data_file:s0
+
+###### CAN ###################################
+/system/bin/init\.cancfg\.sh                    u:object_r:init_cancfg_sh_exec:s0
