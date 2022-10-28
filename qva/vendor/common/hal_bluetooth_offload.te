@@ -60,3 +60,6 @@ allow vendor_hal_bluetooth_offload_qti vendor_bt_data_file:file create_file_perm
 
 #to read bluetooth prop
 get_prop(vendor_hal_bluetooth_offload, vendor_bluetooth_prop);
+
+#vendor_hal_bluetooth_offload_qti needs uevent socket permissions
+allow vendor_hal_bluetooth_offload_qti self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
