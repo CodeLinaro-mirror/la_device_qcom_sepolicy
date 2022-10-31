@@ -62,3 +62,8 @@ set_prop(system_server, vendor_fst_prop)
 # Allow system server to access for dpm
 get_prop(system_server, vendor_persist_dpm_prop)
 
+# Allow system server to access bluetooth property
+get_prop(system_server, bluetooth_prop)
+
+# Allow system server to access vehicle hal property
+get_prop(system_server, vehicle_hal_prop)
