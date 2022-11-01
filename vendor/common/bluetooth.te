@@ -61,5 +61,3 @@ allow bluetooth hal_audio_hwservice:hwservice_manager find;
 dontaudit bluetooth {
       netd_service
 }:service_manager find;
-
-allow bluetooth vendor_gles_data_file:dir search;

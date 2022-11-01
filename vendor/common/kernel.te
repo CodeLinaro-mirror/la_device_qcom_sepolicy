@@ -17,3 +17,4 @@ r_dir_file(kernel, vendor_firmware_file)
 allow kernel domain:process setsched;
 
 allow kernel vold_data_file:file write;
+allow kernel self:capability kill;

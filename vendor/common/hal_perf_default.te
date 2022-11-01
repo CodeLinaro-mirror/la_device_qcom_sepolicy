@@ -111,3 +111,11 @@ allow hal_perf_default kernel:dir search;
 allow hal_perf_default init:dir search;
 allow hal_perf_default init:file { read open getattr };
 allow hal_perf_default kernel:file { read open getattr };
+
+allow hal_perf_default hal_keymaster_qti:dir search;
+allow hal_perf_default logd:dir search;
+allow hal_perf_default servicemanager:dir search;
+allow hal_perf_default tee:dir search;
+allow hal_perf_default ueventd:dir search;
+allow hal_perf_default vendor_init:dir search;
+allow hal_perf_default vold:dir search;

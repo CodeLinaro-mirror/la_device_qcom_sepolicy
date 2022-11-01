@@ -54,4 +54,5 @@ allow qti-khung surfaceflinger:file write;
 allow qti-khung system_server:file write;
 allow qti-khung audioserver:file write;
 allow qti-khung vold:file write;
+dontaudit qti-khung self:capability sys_ptrace;
 ')
