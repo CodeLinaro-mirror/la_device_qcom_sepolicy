@@ -26,3 +26,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 get_prop(shell, vendor_opengles_prop)
+
+# allow shell users to control kgsl perfcounters
+allow shell sysfs_kgsl_shell:file rw_file_perms;
