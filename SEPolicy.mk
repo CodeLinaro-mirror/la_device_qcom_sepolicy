@@ -1,10 +1,11 @@
 # Board specific SELinux policy variable definitions
 ifeq ($(call is-vendor-board-platform,QCOM),true)
-SEPOLICY_PATH:= device/qcom/sepolicy
+BOARD_SEPOLICY_DIR ?= device/qcom/sepolicy
+SEPOLICY_PATH:= $(BOARD_SEPOLICY_DIR)
 LOCAL_PATH := $(call my-dir)
-BOARD_SYSTEM_EXT_PREBUILT_DIR := device/qcom/sepolicy/generic
-BOARD_PRODUCT_PREBUILT_DIR := device/qcom/sepolicy/generic/product
-BOARD_PLAT_PUB_VERSIONED_POLICY := device/qcom/sepolicy
+BOARD_SYSTEM_EXT_PREBUILT_DIR := $(SEPOLICY_PATH)/generic
+BOARD_PRODUCT_PREBUILT_DIR := $(SEPOLICY_PATH)/generic/product
+BOARD_PLAT_PUB_VERSIONED_POLICY := $(SEPOLICY_PATH)
 $(shell $(SEPOLICY_PATH)/append.sh)
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS := \
