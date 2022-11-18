@@ -25,6 +25,10 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 # ssgtzd - SSG TZ Daemon
 type ssgtzd, domain, mlstrustedsubject;
 type ssgtzd_exec, exec_type, vendor_file_type, file_type;
@@ -38,3 +42,8 @@ allow ssgtzd ssg_app:unix_stream_socket connectto;
 #Allow access to firmware/image
 allow ssgtzd vendor_firmware_file:dir r_dir_perms;
 allow ssgtzd vendor_firmware_file:file r_file_perms;
+
+allow ssgtzd self:qipcrtr_socket create_socket_perms_no_ioctl;
+allow ssgtzd tee_device:chr_file rw_file_perms;
+allow ssgtzd vendor_data_file:dir setattr;
+allow ssgtzd ion_device:chr_file r_file_perms;
