@@ -76,3 +76,4 @@ vendor.qti.hardware.sensorscalibrate::ISensorsCalibrate       u:object_r:hal_sen
 vendor.qti.hardware.limits::IThermal                         u:object_r:hal_thermal_hwservice:s0
 android.hardware.automotive.vehicle::IVehicle                u:object_r:hal_automotive_vehicle_hwservice:s0
 vendor.qti.hardware.automotive.vehicle::IQtiVehicle          u:object_r:hal_automotive_vehicle_hwservice:s0
+vendor.qti.hardware.wifi.supplicant::ISupplicantVendor       u:object_r:hal_wifi_supplicant_hwservice:s0
