@@ -9,7 +9,19 @@ allow init_cancfg_sh rootfs:dir { open read };
 allow init_cancfg_sh self:capability net_admin;
 allow init_cancfg_sh self:netlink_route_socket { bind create getattr nlmsg_readpriv nlmsg_write read setopt write };
 allow init_cancfg_sh self:udp_socket { create ioctl };
-allow init_cancfg_sh shell_exec:file { execute getattr map read };
-allow init_cancfg_sh system_file:file execute_no_trans;
-allow init_cancfg_sh toolbox_exec:file { execute execute_no_trans getattr map open read };
+allow init_cancfg_sh shell_exec:file { rx_file_perms map};
+allow init_cancfg_sh toolbox_exec:file { rx_file_perms map};
+allow init_cancfg_sh init_cancfg_sh_exec:file execute_no_trans;
 allow init_cancfg_sh self:global_capability_class_set { net_admin net_raw };
+
+allow init_cancfg_sh self:tcp_socket create_stream_socket_perms;
+allow init_cancfg_sh port:tcp_socket name_bind;
+allow init_cancfg_sh node:tcp_socket node_bind;
+# Connect to ports.
+allow init_cancfg_sh port_type:tcp_socket name_connect;
+
+allow init_cancfg_sh self:can_socket { bind create read write ioctl setopt };
+allowxperm init_cancfg_sh self:can_socket ioctl {
+    SIOCGIFINDEX
+};
+allow init_cancfg_sh system_file:file x_file_perms;
