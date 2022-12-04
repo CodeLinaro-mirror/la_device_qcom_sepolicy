@@ -78,3 +78,5 @@
 
 ###### CAN ###################################
 /system/bin/init\.cancfg\.sh                    u:object_r:init_cancfg_sh_exec:s0
+/system/bin/start_cansimulator\.sh                     u:object_r:init_cancfg_sh_exec:s0
+/system/bin/stop_cansimulator\.sh                    u:object_r:init_cancfg_sh_exec:s0
