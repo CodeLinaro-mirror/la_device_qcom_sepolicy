@@ -47,7 +47,7 @@ user=_app seinfo=platform name=com.qualcomm.wfd.service:wfd_service domain=vendo
 user=_app seinfo=platform name=com.qualcomm.wfd.client domain=vendor_wfd_app type=app_data_file levelfrom=all
 
 #Add new domain for QCC
-user=system seinfo=platform name=com.qualcomm.qti.qdma isPrivApp=true domain=vendor_qcc_app type=system_app_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.qdma domain=vendor_qcc_app type=app_data_file levelFrom=all
 #Add new domain for QCCLMTP
 user=system seinfo=platform name=com.qualcomm.qti.qcclmtp isPrivApp=true domain=vendor_qcc_lmtp_app type=system_app_data_file
 #Add new domain for QCCNetstat
