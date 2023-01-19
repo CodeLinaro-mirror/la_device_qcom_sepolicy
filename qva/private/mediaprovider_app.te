@@ -1,0 +1,6 @@
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+allow mediaprovider_app shell_data_file:dir r_dir_perms;
+allow mediaprovider_app shell_data_file:file r_file_perms;
+allow mediaprovider_app mnt_pass_through_file:lnk_file read;
