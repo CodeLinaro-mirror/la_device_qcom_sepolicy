@@ -75,3 +75,4 @@
 
 ####### evs test app ##############
 /system/bin/evs_ais_app                         u:object_r:evs_ais_app_exec:s0
+/system/bin/evs_qcom_app                         u:object_r:evs_ais_app_exec:s0
