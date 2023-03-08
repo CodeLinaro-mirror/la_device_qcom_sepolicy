@@ -51,12 +51,6 @@ vendor.bluetooth.                          u:object_r:bluetooth_prop:s0
 vendor.camera.aux.packagelist              u:object_r:vendor_persist_camera_prop:s0
 persist.vendor.camera.privapp.list         u:object_r:vendor_persist_camera_prop:s0
 
-#mm-parser
-vendor.mm.enable.qcom_parser       u:object_r:vendor_mm_parser_prop:s0
-vendor.qcom_parser.                u:object_r:vendor_mm_parser_prop:s0
-#mm-osal
-vendor.debug.mmosal.config         u:object_r:vendor_mm_osal_prop:s0
-
 #perf
 vendor.perf.workloadclassifier.enable      u:object_r:vendor_wlc_prop:s0
 persist.vendor.build.date.utc              u:object_r:vendor_wlc_prop:s0
