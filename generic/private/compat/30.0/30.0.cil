@@ -38,8 +38,6 @@
 (expandtypeattribute (vendor_wfdservice_30_0) true)
 (typeattributeset vendor_hal_atfwd_hwservice_30_0 (vendor_hal_atfwd_hwservice))
 (expandtypeattribute (vendor_hal_atfwd_hwservice_30_0) true)
-(typeattributeset vendor_smcinvoke_device_30_0 (vendor_smcinvoke_device))
-(expandtypeattribute (vendor_smcinvoke_device_30_0) true)
 (typeattributeset vendor_persist_dpm_prop_30_0 (vendor_persist_dpm_prop))
 (expandtypeattribute (vendor_persist_dpm_prop_30_0) true)
 (typeattributeset vendor_dun-server_30_0 (vendor_dun-server))

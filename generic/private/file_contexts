@@ -75,3 +75,6 @@
 /data/nfc(/.*)?                                 u:object_r:nfc_data_file:s0
 /data/misc/(qcc|qdma)(/.*)?                           u:object_r:vendor_qcc_data_file:s0
 /data/misc/sxraux(/.*)?                         u:object_r:vendor_sys_sxrauxd_data_file:s0
+
+####### evs test app ##############
+/system/bin/evs_ais_app                         u:object_r:evs_ais_app_exec:s0

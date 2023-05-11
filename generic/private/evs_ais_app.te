@@ -1,0 +1,22 @@
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+# evs_ais_app
+typeattribute evs_ais_app coredomain;
+hal_client_domain(evs_ais_app, hal_evs)
+hal_client_domain(evs_ais_app, hal_vehicle)
+hal_client_domain(evs_ais_app, hal_configstore)
+hal_client_domain(evs_ais_app, hal_graphics_allocator)
+
+# allow init to launch processes in this context
+type evs_ais_app_exec, exec_type, file_type, system_file_type;
+init_daemon_domain(evs_ais_app)
+
+# Allow use of gralloc buffers and EGL
+allow evs_ais_app gpu_device:chr_file rw_file_perms;
+allow evs_ais_app ion_device:chr_file r_file_perms;
+allow evs_ais_app system_file:dir r_dir_perms;
+
+# Allow use of binder and find surfaceflinger
+binder_use(evs_ais_app);
+allow evs_ais_app surfaceflinger_service:service_manager find;

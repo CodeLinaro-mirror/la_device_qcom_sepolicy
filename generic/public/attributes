@@ -25,13 +25,9 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# Changes from Qualcomm Innovation Center are provided under the following license:
-#
-# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause-Clear
 #
 # Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2022-23 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 attribute vendor_hal_hbtp;
@@ -307,6 +303,10 @@ attribute vendor_hal_minkipc_server;
 
 #custom hal server domain attribute
 attribute system_halserverdomain;
+
+attribute vendor_hal_ais;
+attribute vendor_hal_ais_client;
+attribute vendor_hal_ais_server;
 
 # ATFwd Stable AIDL
 attribute vendor_hal_atfwd;
