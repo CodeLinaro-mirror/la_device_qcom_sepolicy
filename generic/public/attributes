@@ -295,6 +295,10 @@ attribute hal_wificfr;
 attribute hal_wificfr_client;
 attribute hal_wificfr_server;
 
+attribute vendor_hal_umd;
+attribute vendor_hal_umd_client;
+attribute vendor_hal_umd_server;
+
 attribute vendor_hal_sxrservice_qti;
 attribute vendor_hal_sxrservice_qti_client;
 attribute vendor_hal_sxrservice_qti_server;
@@ -382,3 +386,8 @@ attribute vendor_hal_bluetooth_fmd_server;
 attribute vendor_hal_qrsloader;
 attribute vendor_hal_qrsloader_client;
 attribute vendor_hal_qrsloader_server;
+
+#attributes for aks gamepad hal
+attribute hal_gamepad;
+attribute hal_gamepad_client;
+attribute hal_gamepad_server;
