@@ -61,3 +61,5 @@
 
 
 type vendor_hal_qccvndhal_hwservice , hwservice_manager_type;
+type vendor_hal_umd_hwservice , hwservice_manager_type;
+

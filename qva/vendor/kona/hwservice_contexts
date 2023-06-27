@@ -63,3 +63,5 @@
 vendor.qti.hardware.qccvndhal::IQccvndhal                     u:object_r:vendor_hal_qccvndhal_hwservice:s0
 vendor.qti.hardware.qccsyshal::IQccsyshal                     u:object_r:vendor_qccsyshal_hwservice:s0
 vendor.qti.hardware.qccsyshal::IQTRRelay                      u:object_r:vendor_qccsyshal_hwservice:s0
+vendor.qti.hardware.umd::IUMDAdaptor                          u:object_r:vendor_hal_umd_hwservice:s0
+
