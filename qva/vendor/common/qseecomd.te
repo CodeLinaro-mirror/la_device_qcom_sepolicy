@@ -27,7 +27,7 @@
 
 # Changes from Qualcomm Innovation Center are provided under the following license:
 #
-#Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+#Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
 #
 #Redistribution and use in source and binary forms, with or without
 #modification, are permitted (subject to the limitations in the
@@ -136,3 +136,6 @@ allowxperm tee vendor_rpmb_device:chr_file ioctl {MMC_IOC_MULTI_CMD};
 hal_client_domain(tee, vendor_hal_powerstateservice);
 # allow tee access set vendor.keymaster.quickboot property
 set_prop(tee, vendor_tee_km_quickboot)
+
+# allow qseecomd to access uevent
+allow tee self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
