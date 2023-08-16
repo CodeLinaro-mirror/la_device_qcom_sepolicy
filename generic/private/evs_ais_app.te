@@ -20,3 +20,7 @@ allow evs_ais_app system_file:dir r_dir_perms;
 # Allow use of binder and find surfaceflinger
 binder_use(evs_ais_app);
 allow evs_ais_app surfaceflinger_service:service_manager find;
+
+binder_call(evs_ais_app, evsmanagerd)
+allow evs_ais_app evsmanagerd_service:service_manager find;
+allow evs_ais_app vendor_file:dir read;
