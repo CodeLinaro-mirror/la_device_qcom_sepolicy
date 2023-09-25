@@ -54,13 +54,7 @@ hal_client_domain(platform_app, hal_wificfr)
 # been defined
 typeattribute platform_app hal_wifi_supplicant_client;
 
-#allow platform_app to interact with IWifi hal
-typeattribute platform_app hal_wifi_client;
-
 #SystemUI needs to access the property ril.cdma.inecmmode
 get_prop(platform_app, radio_cdma_ecm_prop)
 
 unix_socket_connect(platform_app, vendor_dpmtcm, vendor_tcmd);
-
-# allow platform_app access to hal service
-hal_client_domain(platform_app, vendor_hal_dspmanager);

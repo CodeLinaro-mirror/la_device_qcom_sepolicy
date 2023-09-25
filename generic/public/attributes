@@ -59,7 +59,7 @@ attribute vendor_hal_display_demura_client;
 attribute vendor_hal_display_demura_server;
 
 # All types in /mnt/vendor/persist
-attribute vendor_persist_type;
+#attribute vendor_persist_type;
 
 attribute vendor_hal_capabilityconfigstore_qti;
 attribute vendor_hal_capabilityconfigstore_qti_client;
@@ -278,10 +278,6 @@ attribute hal_wificfr;
 attribute hal_wificfr_client;
 attribute hal_wificfr_server;
 
-attribute vendor_hal_umd;
-attribute vendor_hal_umd_client;
-attribute vendor_hal_umd_server;
-
 attribute vendor_hal_sxrservice_qti;
 attribute vendor_hal_sxrservice_qti_client;
 attribute vendor_hal_sxrservice_qti_server;
@@ -297,18 +293,9 @@ attribute vendor_hal_qms_qti;
 attribute vendor_hal_qms_qti_client;
 attribute vendor_hal_qms_qti_server;
 
-attribute vendor_hal_dcservice_qti;
-attribute vendor_hal_dcservice_qti_client;
-attribute vendor_hal_dcservice_qti_server;
-
 attribute vendor_hal_minkipc;
 attribute vendor_hal_minkipc_client;
 attribute vendor_hal_minkipc_server;
 
 #custom hal server domain attribute
 attribute system_halserverdomain;
-
-#attributes for aks gamepad hal
-attribute hal_gamepad;
-attribute hal_gamepad_client;
-attribute hal_gamepad_server;
