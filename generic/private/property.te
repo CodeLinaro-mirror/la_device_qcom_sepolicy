@@ -52,3 +52,5 @@ system_internal_prop(vendor_xrcb_prop)
 
 #bootreceiver property
 system_public_prop(vendor_bootreceiver_prop)
+
+system_internal_prop(vendor_mm_osal_prop)
