@@ -25,6 +25,10 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 #policy for slate daemon
 type slate_daemon, domain;
 type slate_daemon_exec, exec_type, vendor_file_type, file_type;
@@ -34,13 +38,19 @@ init_daemon_domain(slate_daemon)
 #Needed to slate communication
 allow slate_daemon slate_daemon_device:chr_file rw_file_perms;
 allow slate_daemon vendor_sysfs_ssr:chr_file r_file_perms;
+allow slate_daemon vendor_glink_slate_dfu_device:chr_file rw_file_perms;
 
 #Needed to pil loading
 allow slate_daemon vendor_ssr_device:chr_file r_file_perms;
 allow slate_daemon self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 set_prop(slate_daemon, vendor_slate_daemon_prop)
 set_prop(slate_daemon, vendor_slate_boot_complete_prop)
+set_prop(slate_daemon, vendor_qc_aon_dfu_update_prop)
 allow slate_daemon vendor_debugfs_ipc:dir search;
 allow slate_daemon sysfs:file { read open getattr };
-
+#wakelock policy
+wakelock_use(slate_daemon);
 get_prop(slate_daemon, vendor_qc_aon_prop)
+
+# Read dload_mode
+allow slate_daemon vendor_sysfs_dload_mode:file r_file_perms;
