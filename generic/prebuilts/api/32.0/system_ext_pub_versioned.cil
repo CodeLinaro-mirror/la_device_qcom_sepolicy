@@ -1,3 +1,7 @@
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 (type vendor_smcinvoke_device)
 (type vendor_qtelephony)
 (type vendor_dpmd)
@@ -80,3 +84,23 @@
 (typeattribute vendor_hal_telephony_service_32_0)
 (typeattribute vendor_persist_tcm_prop_32_0)
 (typeattribute vendor_persist_rcs_prop_30_0)
+(type car_bootuser_prop)
+(type carpowerpolicyd)
+(type carpowerpolicyd_service)
+(type carservice_app)
+(type carservice_service)
+(type carwatchdogd)
+(type carwatchdogd_service)
+(type procfsinspector_service)
+(type sysfs_fs_lifetime_write)
+(type system_car_data_file)
+(typeattribute car_bootuser_prop_32_0)
+(typeattribute carpowerpolicyd_32_0)
+(typeattribute carpowerpolicyd_service_32_0)
+(typeattribute carservice_app_32_0)
+(typeattribute carservice_service_32_0)
+(typeattribute carwatchdogd_32_0)
+(typeattribute carwatchdogd_service_32_0)
+(typeattribute procfsinspector_service_32_0)
+(typeattribute sysfs_fs_lifetime_write_32_0)
+(typeattribute system_car_data_file_32_0)
