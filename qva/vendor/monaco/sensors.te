@@ -32,3 +32,8 @@
 
 #allow service access to vendor_qc_aon_prop
 get_prop(vendor_sensors, vendor_qc_aon_prop)
+
+# allow sensors to access aonutility service
+hwbinder_use(vendor_sensors);
+allow vendor_sensors hal_aonutility_hwservice:hwservice_manager find;
+binder_call(vendor_sensors, hal_aonutility_default)
