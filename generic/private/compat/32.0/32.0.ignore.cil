@@ -1,0 +1,21 @@
+;; new_objects - a collection of types that have been introduced that have no
+;;   analogue in older policy.  Thus, we do not need to map these types to
+;;   previous ones.  Add here to pass checkapi test
+(type new_objects)
+(typeattribute new_objects)
+(typeattributeset new_objects
+  ( new_objects
+    vendor_hal_minkipc_service
+    vendor_afp_prop
+    car_bootuser_prop
+    carpowerpolicyd
+    carpowerpolicyd_service
+    carservice_app
+    carservice_service
+    carwatchdogd
+    carwatchdogd_service
+    evs_ais_app
+    procfsinspector_service
+    qsguard
+    sysfs_fs_lifetime_write
+    system_car_data_file))
