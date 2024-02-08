@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 vendor_internal_prop(vendor_dataadpl_prop);
@@ -128,6 +128,6 @@ vendor_internal_prop(vendor_haptics_twm_prop);
 vendor_internal_prop(vendor_audio_twm_prop);
 vendor_internal_prop(camera_prop);
 vendor_internal_prop(vendor_qc_aon_prop);
-
+vendor_internal_prop(vendor_touch_offload_prop);
 system_restricted_prop(vendor_watch_orientation_prop);
 vendor_internal_prop(vendor_qc_dsframework_prop);

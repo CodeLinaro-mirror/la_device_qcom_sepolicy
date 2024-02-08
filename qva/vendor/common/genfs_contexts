@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 genfscon sysfs /devices/virtual/npu/msm_npu/pwr u:object_r:vendor_sysfs_npu:s0
@@ -58,6 +58,8 @@ genfscon sysfs /devices/platform/soc/c800000.qcom,icnss/bt_profile u:object_r:sy
 genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-ddr-latfloor/devfreq u:object_r:vendor_sysfs_devfreq:s0
 genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-conn-0-DSI-1/twm_enable u:object_r:vendor_sysfs_drm:s0
 genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-conn-0-DSI-1/panel_power_state u:object_r:vendor_sysfs_drm:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-1/1-0024/pt_touch_offload u:object_r:vendor_sysfs_drm:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-1/1-0039/raydium_touch_offload u:object_r:vendor_sysfs_drm:s0
 
 #sysfs dload_mode node
 genfscon sysfs /kernel/dload/dload_mode u:object_r:vendor_sysfs_dload_mode:s0
