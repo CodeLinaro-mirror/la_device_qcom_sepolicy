@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 genfscon sysfs /devices/virtual/npu/msm_npu/pwr u:object_r:vendor_sysfs_npu:s0
@@ -69,3 +69,4 @@ genfscon sysfs /block/mmcblk0/bdi/read_ahead_kb                                 
 genfscon sysfs /block/mmcblk0rpmb/bdi/read_ahead_kb                                     u:object_r:vendor_sysfs_mmc_host:s0
 
 genfscon sysfs /power/disk                                     u:object_r:sysfs_power_disk:s0
+genfscon proc /sys/vm/swappiness    u:object_r:proc_swappiness:s0
