@@ -7,8 +7,6 @@
   ( new_objects
     vendor_hal_qvirtservice_qti
     car_bootuser_prop
-    carpowerpolicyd
-    carpowerpolicyd_service
     carservice_app
     carservice_service
     carwatchdogd
