@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 ctl.vendor.cnd                    u:object_r:vendor_cnd_vendor_prop:s0
@@ -148,7 +148,7 @@ vendor.bg_reset               		     u:object_r:vendor_bg_daemon_prop:s0
 vendor.slate_reset                           u:object_r:vendor_slate_daemon_prop:s0
 
 vendor.bg.boot_complete       		     u:object_r:vendor_bg_boot_complete_prop:s0
-
+persist.vendor.touch_offload                 u:object_r:vendor_touch_offload_prop:s0
 vendor.slate.boot_complete                   u:object_r:vendor_slate_boot_complete_prop:s0
 
 persist.vendor.bg.qspy_logging      	     u:object_r:vendor_bg_qspy_logging_prop:s0
