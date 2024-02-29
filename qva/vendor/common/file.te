@@ -165,3 +165,5 @@ type vendor_sysfs_drm, sysfs_type, fs_type;
 type vendor_sysfs_dload_mode, sysfs_type, fs_type;
 # System power-disk file type
 type sysfs_power_disk, sysfs_type, fs_type;
+# Proc sys-vm-swappiness file type
+type proc_swappiness, proc_type, fs_type;

@@ -80,3 +80,6 @@ type vendor_glink_slate_qcli_device, dev_type;
 
 #define power_state char device
 type vendor_power_state_device, dev_type;
+
+#block device for swap
+type vendor_hibernate_swap, dev_type;
