@@ -7,8 +7,6 @@
   ( new_objects
     vendor_afp_prop
     car_bootuser_prop
-    carpowerpolicyd
-    carpowerpolicyd_service
     carservice_app
     carservice_service
     carwatchdogd
