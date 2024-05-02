@@ -283,3 +283,9 @@ attribute vendor_sys_sxrauxservice_qti_socket_client;
 attribute vendor_hal_mwqemadapter_qti;
 attribute vendor_hal_mwqemadapter_qti_client;
 attribute vendor_hal_mwqemadapter_qti_server;
+
+attribute vendor_hal_qvrcamservice_qti;
+attribute vendor_hal_qvrcamservice_qti_client;
+attribute vendor_hal_qvrcamservice_qti_server;
+attribute vendor_hal_qvrcamservice_qti_socket_client;
+attribute vendor_hal_qvrcamservice_qti_socket_fd_use_client;
