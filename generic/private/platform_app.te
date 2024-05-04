@@ -58,7 +58,3 @@ typeattribute platform_app hal_wifi_supplicant_client;
 get_prop(platform_app, radio_cdma_ecm_prop)
 
 unix_socket_connect(platform_app, vendor_dpmtcm, vendor_tcmd);
-
-#============= platform_app ==============
-typeattribute platform_app vendor_hal_qvrservice_qti_socket_fd_use_client;
-allow platform_app default_prop:property_service set;
