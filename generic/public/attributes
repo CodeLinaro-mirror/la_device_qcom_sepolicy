@@ -27,7 +27,7 @@
 #
 # Changes from Qualcomm Innovation Center are provided under the following license:
 #
-# Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2022-2024 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 #
 
@@ -283,6 +283,10 @@ attribute hal_wificfr;
 attribute hal_wificfr_client;
 attribute hal_wificfr_server;
 
+attribute vendor_hal_umd;
+attribute vendor_hal_umd_client;
+attribute vendor_hal_umd_server;
+
 attribute vendor_hal_sxrservice_qti;
 attribute vendor_hal_sxrservice_qti_client;
 attribute vendor_hal_sxrservice_qti_server;
@@ -330,3 +334,9 @@ attribute vendor_hal_qspa_qti_server;
 attribute vendor_hal_cacert_qti;
 attribute vendor_hal_cacert_qti_client;
 attribute vendor_hal_cacert_qti_server;
+
+attribute vendor_hal_qvrcamservice_qti;
+attribute vendor_hal_qvrcamservice_qti_client;
+attribute vendor_hal_qvrcamservice_qti_server;
+attribute vendor_hal_qvrcamservice_qti_socket_client;
+attribute vendor_hal_qvrcamservice_qti_socket_fd_use_client;
