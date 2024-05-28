@@ -44,7 +44,7 @@ set_prop(vendor_qvirtmgr, vendor_qvirtmgr_prop)
 allow vendor_qvirtmgr vendor_qcrosvm_exec:file rx_file_perms;
 
 allow vendor_qvirtmgr vendor_vm_qti_system_file:file r_file_perms;
-allow vendor_qvirtmgr vendor_vm_qti_system_file:dir { getattr search };
+allow vendor_qvirtmgr vendor_vm_qti_system_file:dir { r_dir_perms };
 
 allow vendor_qvirtmgr mnt_product_file:file rw_file_perms;
 allow vendor_qvirtmgr mnt_product_file:dir search;
