@@ -17,4 +17,6 @@
     procfsinspector_service
     sysfs_fs_lifetime_write
     system_car_data_file
+    cartelemetryd
+    cartelemetryd_service
   ))

@@ -15,4 +15,6 @@
     procfsinspector_service
     sysfs_fs_lifetime_write
     system_car_data_file
-    vendor_hal_qvirt_service))
+    vendor_hal_qvirt_service
+    cartelemetryd
+    cartelemetryd_service))
