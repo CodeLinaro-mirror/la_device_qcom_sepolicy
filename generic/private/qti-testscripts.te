@@ -25,6 +25,10 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 #as the exec is defined in file_context  it is hitting build
 # error in user build  so moving out of the macro
 type qti-testscripts_exec, system_file_type, exec_type, file_type;
@@ -97,4 +101,7 @@ userdebug_or_eng(`
 
 # allow lmkd to kill tasks with positive oom_score_adj under memory pressure
   allow lmkd qti-testscripts:process { setsched sigkill };
+
+  hal_client_domain(qti-testscripts, vendor_hal_diaghal);
+  hwbinder_use(qti-testscripts)
 ')
