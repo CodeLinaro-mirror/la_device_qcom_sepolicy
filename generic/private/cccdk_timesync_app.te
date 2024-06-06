@@ -7,4 +7,5 @@ app_domain(vendor_cccdktimesync_app)
 
 allow vendor_cccdktimesync_app app_api_service:service_manager find;
 
-hal_client_domain(vendor_cccdktimesync_app, hal_bluetooth)
+typeattribute vendor_cccdktimesync_app hal_bluetooth_client;
+typeattribute vendor_cccdktimesync_app halclientdomain;

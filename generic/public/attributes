@@ -64,7 +64,7 @@ attribute vendor_hal_display_aiqe_client;
 attribute vendor_hal_display_aiqe_server;
 
 # All types in /mnt/vendor/persist
-attribute vendor_persist_type;
+#attribute vendor_persist_type;
 
 attribute vendor_hal_capabilityconfigstore_qti;
 attribute vendor_hal_capabilityconfigstore_qti_client;
