@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
-# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2024-2025 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 # access to seemp folder
@@ -49,6 +49,9 @@ get_prop(system_app, vendor_wigig_core_prop);
 
 #allow system_app to access faceauth
 hal_client_domain(system_app, hal_face)
+
+# allow system_app access to GPP Property
+set_prop(system_app, vendor_sys_gpp_prop);
 
 # allow system_app to access IWifiMyFtm AIDL service
 userdebug_or_eng(`

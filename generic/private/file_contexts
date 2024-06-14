@@ -27,7 +27,7 @@
 
 #Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
 
-#Copyright (c) 2022, 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+#Copyright (c) 2022, 2024-2025 Qualcomm Innovation Center, Inc. All rights reserved.
 #SPDX-License-Identifier: BSD-3-Clause-Clear
 
 /data/misc/elabel(/.*)?         u:object_r:vendor_elabel_data_file:s0
@@ -52,6 +52,7 @@
 /(system_ext|system/system_ext)/bin/dpmd        u:object_r:vendor_dpmd_exec:s0
 /(system_ext|system/system_ext)/bin/tcmd        u:object_r:vendor_tcmd_exec:s0
 /system/bin/vpsservice                          u:object_r:vendor_vpsservice_exec:s0
+/system/bin/gppservice                          u:object_r:vendor_gppservice_exec:s0
 
 ####### system_ext file ###############
 /(system_ext|system/system_ext)/bin/dun-server  u:object_r:vendor_dun-server_exec:s0

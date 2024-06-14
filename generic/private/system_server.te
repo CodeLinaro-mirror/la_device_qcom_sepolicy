@@ -24,6 +24,10 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2025 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 add_service(system_server, vendor_izat_service)
 
@@ -48,6 +52,9 @@ allow system_server vendor_perf_service:service_manager find;
 #Allow system_server to add and find vps service
 allow system_server vendor_vps_service:service_manager find;
 
+#Allow system_server to add and find gpp service
+allow system_server vendor_gpp_service:service_manager find;
+
 #Allow for access to WFD specific debug properties
 binder_call(system_server, vendor_wfdservice);
 userdebug_or_eng(`
@@ -62,6 +69,9 @@ set_prop(system_server, vendor_fst_prop)
 
 # Allow system server to access for dpm
 get_prop(system_server, vendor_persist_dpm_prop)
+
+# Allow system server to access GPP Property
+set_prop(system_server, vendor_sys_gpp_prop)
 
 #Allow system_server to add and find qspmsvc service
 allow system_server vendor_qspmsvc_service:service_manager find;
