@@ -74,3 +74,4 @@ allow system_server binderfs_logs:file r_file_perms;
 
 # Allow system server to access for rcs service
 get_prop(system_server, vendor_persist_rcs_prop)
+get_prop(system_server, vendor_persist_ntn_prop)
