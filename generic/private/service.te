@@ -42,3 +42,4 @@ type vendor_qvirtmgr_service,            service_manager_type;
 type vendor_virtual_keyboard_service,      service_manager_type;
 type cross_device_service,          app_api_service, system_server_service, service_manager_type;
 type vendor_offload_service,             app_api_service, system_server_service, service_manager_type;
+type vendor_suspend_service,             app_api_service, system_server_service, service_manager_type;
