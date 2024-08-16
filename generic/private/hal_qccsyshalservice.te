@@ -25,6 +25,10 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 type vendor_qccsyshal_qti, domain, coredomain, mlstrustedsubject;
 type vendor_qccsyshal_qti_exec, system_file_type , exec_type, file_type;
 
@@ -59,3 +63,6 @@ userdebug_or_eng(`
 ')
 
 allow vendor_qccsyshal_qti vendor_qcc_netstat_app:unix_stream_socket connectto;
+
+#Allow qccsyshal_aidl to be registered with service manager
+hal_attribute_service(vendor_qccsyshal, vendor_qccsyshal_service);

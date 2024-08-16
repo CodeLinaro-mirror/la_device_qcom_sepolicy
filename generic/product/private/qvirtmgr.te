@@ -25,8 +25,8 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 #######################
@@ -48,3 +48,10 @@ allow vendor_qvirtmgr vendor_vm_qti_system_file:dir { getattr search };
 
 allow vendor_qvirtmgr mnt_product_file:file rw_file_perms;
 allow vendor_qvirtmgr mnt_product_file:dir search;
+
+userdebug_or_eng(`
+  type vendor_qvirtmgr_tmpfs, file_type;
+  tmpfs_domain(vendor_qvirtmgr)
+  allow vendor_qvirtmgr self:capability sys_resource;
+  dontaudit vendor_qvirtmgr self:capability ipc_lock;
+')

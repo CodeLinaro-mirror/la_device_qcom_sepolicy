@@ -25,11 +25,16 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 type vendor_sigmahal_qti, domain, coredomain;
 type vendor_sigmahal_qti_exec, system_file_type , exec_type, file_type;
 
 hal_server_domain(vendor_sigmahal_qti,vendor_sigmahal);
 hal_attribute_hwservice(vendor_sigmahal, vendor_sigmahal_hwservice);
+hal_attribute_service(vendor_sigmahal, vendor_hal_sigma_miracast_service);
 
 #Allow for transition from init domain to vendor_sigmahal_qti
 init_daemon_domain(vendor_sigmahal_qti);

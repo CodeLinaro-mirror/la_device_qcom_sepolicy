@@ -25,6 +25,10 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 type vendor_qesdk_app, domain;
 typeattribute vendor_qesdk_app coredomain;
 typeattribute vendor_qesdk_app mlstrustedsubject;
@@ -32,7 +36,8 @@ app_domain(vendor_qesdk_app)
 #allow vendor_qesdk_app to access vendor_hal_qesdhal
 qesdk_app_access(vendor_qesdk_app);
 allow vendor_qesdk_app system_data_file:dir search;
-allow vendor_qesdk_app system_app_data_file:dir { getattr search };
+allow vendor_qesdk_app system_app_data_file:dir { create_dir_perms };
+allow vendor_qesdk_app system_app_data_file:file create_file_perms;
 allow vendor_qesdk_app user_profile_root_file:dir search;
 allow vendor_qesdk_app app_api_service:service_manager find;
 hal_client_domain(vendor_qesdk_app, vendor_hal_perf)

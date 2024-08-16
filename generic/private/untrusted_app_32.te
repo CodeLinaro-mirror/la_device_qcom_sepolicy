@@ -30,7 +30,12 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 qesdk_app_access(untrusted_app_32);
+hal_client_domain(untrusted_app_32, vendor_hal_qspmhal)
 
 # allow app to be a client of DSP HAL
 hal_client_domain(untrusted_app_32, vendor_hal_dspmanager)

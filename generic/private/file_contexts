@@ -25,9 +25,9 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#Changes from Qualcomm Innovation Center are provided under the following license:
+#Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
 
-#Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+#Copyright (c) 2022, 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 #SPDX-License-Identifier: BSD-3-Clause-Clear
 
 /data/misc/elabel(/.*)?         u:object_r:vendor_elabel_data_file:s0
@@ -60,6 +60,8 @@
 /(system_ext|system/system_ext)/bin/qdtservice  u:object_r:vendor_qdtservice_exec:s0
 /(system|system_ext|system/system_ext)/bin/(wfdservice|wfdservice64)           u:object_r:vendor_wfdservice_exec:s0
 /(system|system_ext|system/system_ext)/bin/(sigma_miracasthalservice|sigma_miracasthalservice64) u:object_r:vendor_sigmahal_qti_exec:s0
+/(system|system_ext|system/system_ext)/bin/sigma_miracasthalservice_aidl u:object_r:vendor_sigmahal_qti_exec:s0
+/(system_ext|system/system_ext)/bin/qccsyshal_aidl-service  u:object_r:vendor_qccsyshal_qti_exec:s0
 /(system_ext|system/system_ext)/bin/qccsyshalservice  u:object_r:vendor_qccsyshal_qti_exec:s0
 /(system_ext|system/system_ext)/bin/qccsyshal@[1-9]\.[1-9]-service u:object_r:vendor_qccsyshal_qti_exec:s0
 /(system_ext|system/system_ext)/bin/mmi         u:object_r:vendor_mmi_sys_exec:s0

@@ -4,15 +4,4 @@
 (type new_objects)
 (typeattribute new_objects)
 (typeattributeset new_objects
-  ( new_objects
-    vendor_hal_qvirtservice_qti
-    car_bootuser_prop
-    carservice_app
-    carservice_service
-    carwatchdogd
-    carwatchdogd_service
-    evs_ais_app
-    procfsinspector_service
-    sysfs_fs_lifetime_write
-    system_car_data_file
-    vendor_hal_qvirt_service))
+  ( new_objects))
