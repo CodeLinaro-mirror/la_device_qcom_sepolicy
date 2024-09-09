@@ -1,0 +1,6 @@
+(typeattributeset carpowerpolicyd_service_32_0 (carpowerpolicyd_service))
+(expandtypeattribute (carpowerpolicyd_service_32_0) true)
+(typeattribute carpowerpolicyd_service_32_0)
+(typeattributeset carpowerpolicyd_32_0 (carpowerpolicyd))
+(expandtypeattribute (carpowerpolicyd_32_0) true)
+(typeattribute carpowerpolicyd_32_0)
