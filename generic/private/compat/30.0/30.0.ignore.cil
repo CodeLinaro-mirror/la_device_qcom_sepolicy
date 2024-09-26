@@ -14,4 +14,16 @@
     vendor_qesdk_service
     vendor_qcc_authmgr_app
     vendor_qcc_netstat_app
-    vendor_qcc_lmtp_app))
+    vendor_qcc_lmtp_app
+    car_bootuser_prop
+    carpowerpolicyd
+    carpowerpolicyd_service
+    carservice_app
+    carservice_service
+    carwatchdogd
+    carwatchdogd_service
+    evs_ais_app
+    procfsinspector_service
+    qsguard
+    sysfs_fs_lifetime_write
+    system_car_data_file))
