@@ -1,0 +1,20 @@
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+type vendor_create_vlan, domain;
+type vendor_create_vlan_exec, system_file_type, exec_type, file_type;
+
+typeattribute vendor_create_vlan coredomain;
+
+init_daemon_domain(vendor_create_vlan)
+
+userdebug_or_eng(`
+allow vendor_create_vlan kmsg_device:chr_file { write open };
+')
+
+allow vendor_create_vlan system_file:file { execute_no_trans };
+allow vendor_create_vlan vendor_create_vlan:netlink_route_socket { bind write getattr create setopt read nlmsg_write };
+allow vendor_create_vlan vendor_create_vlan:udp_socket { create ioctl };
+allowxperm vendor_create_vlan vendor_create_vlan:udp_socket ioctl { SIOCGIFINDEX };
+allow vendor_create_vlan vendor_create_vlan:capability { net_admin };
+allow vendor_create_vlan proc_net:file { write open read getattr };
