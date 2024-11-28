@@ -37,3 +37,6 @@ type vendor_qcc_data_file, file_type, data_file_type, core_data_file_type, mlstr
 type vendor_qcc_app_socket, file_type, mlstrustedobject, coredomain_socket;
 type vendor_sys_sxrauxd_data_file, file_type, data_file_type, core_data_file_type;
 type vendor_sys_sxrauxd_socket, file_type, coredomain_socket;
+# heartbeat file type for sysfs access
+type vendor_sysfs_heartbeat, sysfs_type, fs_type;
+
