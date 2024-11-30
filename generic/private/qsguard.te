@@ -6,12 +6,12 @@ typeattribute qsguard mlstrustedsubject;
 type qsguard_exec, system_file_type, exec_type, file_type;
 
 init_daemon_domain(qsguard)
-userdebug_or_eng(`
+#userdebug_or_eng(`
   allow qsguard surfaceflinger_service:service_manager find;
   allow qsguard dropbox_service:service_manager find;
 
   allow qsguard surfaceflinger:unix_stream_socket { read write };
-  binder_call(qsguard, servicemanager)
+  binder_use(qsguard)
   binder_call(qsguard, surfaceflinger)
   # allow use dropbox
   binder_call(qsguard, system_server)
@@ -40,4 +40,4 @@ userdebug_or_eng(`
 
   dontaudit qsguard default_prop:file read;
 
-')
+#')
