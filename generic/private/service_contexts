@@ -50,3 +50,4 @@ nfc.st_ext                                     u:object_r:nfc_service:s0
 vendor.qvirtmgr                                u:object_r:vendor_qvirtmgr_service:s0
 vendor.qti.qesdsys.IQesdSys/default            u:object_r:vendor_qesdk_service:s0
 vendor.qti.hardware.radio.atcmdfwd.IAtCmdFwd/AtCmdFwdAidl u:object_r:radio_service:s0
+bluetooth_manager_ext                          u:object_r:bluetooth_manager_service:s0
