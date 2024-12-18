@@ -1,0 +1,16 @@
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+type vendor_eth_cli, domain;
+type vendor_eth_cli_exec, system_file_type, exec_type, file_type;
+
+typeattribute vendor_eth_cli coredomain;
+
+init_daemon_domain(vendor_eth_cli)
+
+userdebug_or_eng(`allow vendor_eth_cli kmsg_device:chr_file { open write }');
+allow vendor_eth_cli shell_exec:file { map };
+allow vendor_eth_cli system_file:file execute_no_trans;
+allow vendor_eth_cli proc_net:file { open read getattr };
+allow vendor_eth_cli vendor_eth_cli:netlink_route_socket { create setopt bind getattr write nlmsg_readpriv read nlmsg_write };
+allow vendor_eth_cli vendor_eth_cli:capability net_admin;
