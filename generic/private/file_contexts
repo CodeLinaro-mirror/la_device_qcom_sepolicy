@@ -25,9 +25,9 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#Changes from Qualcomm Innovation Center are provided under the following license:
+#Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
 
-#Copyright (c) 2022, 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+#Copyright (c) 2022, 2024-2025 Qualcomm Innovation Center, Inc. All rights reserved.
 #SPDX-License-Identifier: BSD-3-Clause-Clear
 
 /data/misc/elabel(/.*)?         u:object_r:vendor_elabel_data_file:s0
@@ -54,6 +54,7 @@
 /system/bin/vpsservice                          u:object_r:vendor_vpsservice_exec:s0
 
 ####### system_ext file ###############
+/(system_ext|system/system_ext)/bin/hw/android\.hardware\.audio\.parameter_parser\.example_service u:object_r:audio_vendor_parameter_parser_exec:s0
 /(system_ext|system/system_ext)/bin/dun-server  u:object_r:vendor_dun-server_exec:s0
 /(system_ext|system/system_ext)/bin/bt_logger   u:object_r:vendor_bt_logger_exec:s0
 /(system_ext|system/system_ext)/bin/perfservice u:object_r:vendor_perfservice_exec:s0

@@ -1,0 +1,5 @@
+This file is taken from https://git.codelinaro.org/clo/la/device/google/cuttlefish/-/blob/b801d66f2ad44d6119e15a85081f9e62a7972e6a/METADATA and it is applicable to file generic/private/audio_vendor_parameter_parser_service.te
+
+third_party {
+  license_type: NOTICE
+}
