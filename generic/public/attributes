@@ -24,6 +24,9 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Copyright (c) 2025 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 attribute vendor_hal_hbtp;
 attribute vendor_hal_hbtp_client;
@@ -289,3 +292,13 @@ attribute vendor_hal_qvrcamservice_qti_client;
 attribute vendor_hal_qvrcamservice_qti_server;
 attribute vendor_hal_qvrcamservice_qti_socket_client;
 attribute vendor_hal_qvrcamservice_qti_socket_fd_use_client;
+
+# PowerState Service
+attribute vendor_hal_powerstateservice;
+attribute vendor_hal_powerstateservice_client;
+attribute vendor_hal_powerstateservice_server;
+
+# PowerState Utility
+attribute vendor_hal_powerstateutility;
+attribute vendor_hal_powerstateutility_client;
+attribute vendor_hal_powerstateutility_server;
