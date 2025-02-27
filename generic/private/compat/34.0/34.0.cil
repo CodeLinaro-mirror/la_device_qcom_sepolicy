@@ -163,3 +163,7 @@
 (typeattributeset carpowerpolicyd_service_34_0 (carpowerpolicyd_service))
 (expandtypeattribute (carpowerpolicyd_service_34_0) true)
 (typeattribute carpowerpolicyd_service_34_0)
+(typeattributeset car_boot_prop_34_0 (car_boot_prop))
+(expandtypeattribute (car_boot_prop_34_0) true)
+(typeattribute car_boot_prop_34_0)
+
