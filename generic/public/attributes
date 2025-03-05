@@ -325,3 +325,8 @@ attribute vendor_hal_imsrtphal_server;
 attribute vendor_hal_qspa_qti;
 attribute vendor_hal_qspa_qti_client;
 attribute vendor_hal_qspa_qti_server;
+
+# UXOffload HAL
+attribute vendor_hal_uxoffload;
+attribute vendor_hal_uxoffload_client;
+attribute vendor_hal_uxoffload_server;
