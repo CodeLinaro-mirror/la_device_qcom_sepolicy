@@ -1,0 +1,5 @@
+# Copyright (c) 2025 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+allow netd vendor_c2cplatform_app:fd use;
+allow netd vendor_c2cplatform_app:tcp_socket {read write getopt setopt ioctl getattr setattr};
