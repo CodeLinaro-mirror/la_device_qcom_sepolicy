@@ -377,3 +377,8 @@ attribute vendor_hal_snapx_service_qti_server;
 attribute vendor_hal_bluetooth_fmd;
 attribute vendor_hal_bluetooth_fmd_client;
 attribute vendor_hal_bluetooth_fmd_server;
+
+# For QRS
+attribute vendor_hal_qrsloader;
+attribute vendor_hal_qrsloader_client;
+attribute vendor_hal_qrsloader_server;
