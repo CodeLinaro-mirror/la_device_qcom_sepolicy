@@ -27,7 +27,7 @@
 #
 # Changes from Qualcomm Innovation Center are provided under the following license:
 #
-# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2022, 2025 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 attribute vendor_hal_hbtp;
@@ -317,3 +317,13 @@ attribute hal_gamepad_server;
 attribute vendor_hal_qspa_qti;
 attribute vendor_hal_qspa_qti_client;
 attribute vendor_hal_qspa_qti_server;
+
+# PowerState Service
+attribute vendor_hal_powerstateservice;
+attribute vendor_hal_powerstateservice_client;
+attribute vendor_hal_powerstateservice_server;
+
+# PowerState Utility
+attribute vendor_hal_powerstateutility;
+attribute vendor_hal_powerstateutility_client;
+attribute vendor_hal_powerstateutility_server;
