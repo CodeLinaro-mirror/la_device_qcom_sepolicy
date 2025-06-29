@@ -27,3 +27,6 @@
 
 # Access tracefs instances
 allow kernel debugfs_tracing_instances:dir search;
+userdebug_or_eng(`
+allow kernel overlayfs_file:dir { create getattr mounton rmdir search };
+')
