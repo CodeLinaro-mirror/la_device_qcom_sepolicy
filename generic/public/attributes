@@ -397,3 +397,8 @@ attribute vendor_hal_smcloader_server;
 attribute vendor_hal_avf_qcvm_qti;
 attribute vendor_hal_avf_qcvm_qti_client;
 attribute vendor_hal_avf_qcvm_qti_server;
+
+# attributes for vendor_framework_utils_app
+attribute vendor_framework_utils_app;
+attribute vendor_framework_utils_app_client;
+attribute vendor_framework_utils_app_server;
