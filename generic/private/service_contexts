@@ -59,3 +59,4 @@ vendor.qti.hardware.radio.atcmdfwd.IAtCmdFwd/AtCmdFwdAidl u:object_r:radio_servi
 vendor.qti.qvirt.IVirtualizationService/default   u:object_r:vendor_hal_qvirt_service:s0
 virtual_keyboard                          u:object_r:virtual_keyboard_service:s0
 cross_device_service                      u:object_r:cross_device_service:s0
+vendor.qti.hardware.perf2.IPerf/default   u:object_r:vendor_perf_service:s0
