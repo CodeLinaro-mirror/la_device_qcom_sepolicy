@@ -26,7 +26,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 type vendor_qesdk_app, domain;
-until_board_api(202504, `
 typeattribute vendor_qesdk_app coredomain;
 typeattribute vendor_qesdk_app mlstrustedsubject;
 app_domain(vendor_qesdk_app)
@@ -39,4 +38,3 @@ allow vendor_qesdk_app user_profile_root_file:dir search;
 allow vendor_qesdk_app app_api_service:service_manager find;
 hal_client_domain(vendor_qesdk_app, vendor_hal_perf)
 add_service(vendor_qesdk_app, vendor_qesdk_service);
-')
