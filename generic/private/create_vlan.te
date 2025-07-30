@@ -21,5 +21,6 @@ allow vendor_create_vlan proc_net:file { write open read getattr };
 allow vendor_create_vlan net_data_file:dir { search };
 allow vendor_create_vlan shell_exec:file { map read execute getattr };
 allow vendor_create_vlan toolbox_exec:file { getattr execute read open execute_no_trans map };
+allow vendor_create_vlan net_data_file:file { getattr read open };
 
 
