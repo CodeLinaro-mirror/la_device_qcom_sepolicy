@@ -151,3 +151,7 @@
 (typeattribute cartelemetryd_31_0)
 (typeattributeset cartelemetryd_service_31_0 (cartelemetryd_service))
 (typeattributeset cartelemetryd_31_0 (cartelemetryd))
+
+(typeattributeset asymmetric_prop_31_0 (asymmetric_prop))
+(expandtypeattribute (asymmetric_prop_31_0) true)
+(typeattribute asymmetric_prop_31_0)
