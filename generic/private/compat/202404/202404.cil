@@ -182,3 +182,9 @@
 (typeattributeset sysfs_fs_lifetime_write_202404 (sysfs_fs_lifetime_write))
 (expandtypeattribute (sysfs_fs_lifetime_write_202404) true)
 (typeattribute sysfs_fs_lifetime_write_202404)
+
+
+(typeattributeset asymmetric_prop_202404 (asymmetric_prop))
+(expandtypeattribute (asymmetric_prop_202404) true)
+(typeattribute asymmetric_prop_202404)
+

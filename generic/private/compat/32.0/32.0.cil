@@ -155,3 +155,7 @@
 (expandtypeattribute (car_boot_prop_32_0) true)
 (typeattribute car_boot_prop_32_0)
 
+(typeattributeset asymmetric_prop_32_0 (asymmetric_prop))
+(expandtypeattribute (asymmetric_prop_32_0) true)
+(typeattribute asymmetric_prop_32_0)
+
