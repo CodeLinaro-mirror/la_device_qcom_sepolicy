@@ -13,7 +13,7 @@ allow vendor_create_vlan kmsg_device:chr_file { write open };
 ')
 
 allow vendor_create_vlan system_file:file { execute_no_trans };
-allow vendor_create_vlan vendor_create_vlan:netlink_route_socket { bind write getattr create setopt read nlmsg_write nlmsg_readpriv };
+allow vendor_create_vlan vendor_create_vlan:netlink_route_socket { bind write getattr create setopt read nlmsg_write nlmsg_readpriv nlmsg_read };
 allow vendor_create_vlan vendor_create_vlan:udp_socket { create ioctl };
 allowxperm vendor_create_vlan vendor_create_vlan:udp_socket ioctl { SIOCGIFINDEX };
 allow vendor_create_vlan vendor_create_vlan:capability { net_admin };
