@@ -76,6 +76,7 @@
 /system_ext/bin/virtual_keyboard     u:object_r:virtual_keyboard_exec:s0
 /(system_ext|system/system_ext)/bin/create_vlan_vm_1\.sh        u:object_r:vendor_create_vlan_exec:s0
 /(system_ext|system/system_ext)/bin/create_vlan_vm_2\.sh        u:object_r:vendor_create_vlan_exec:s0
+/(system_ext|system/system_ext)/bin/create_whitelist_rbvm\.sh   u:object_r:vendor_create_vlan_exec:s0
 /(system_ext|system/system_ext)/bin/eth_cli\.sh             u:object_r:vendor_eth_cli_exec:s0
 /(system_ext|system/system_ext)/bin/link_monitor\.sh             u:object_r:vendor_eth_cli_exec:s0
 /(system_ext|system/system_ext)/bin/network_config_default\.sh  u:object_r:vendor_create_vlan_exec:s0
