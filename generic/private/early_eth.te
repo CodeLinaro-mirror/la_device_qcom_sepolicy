@@ -13,4 +13,5 @@ allowxperm vendor_early_eth self:udp_socket ioctl { SIOCSIFADDR SIOCSIFFLAGS };
 allow vendor_early_eth toolbox_exec:file { map execute_no_trans read open execute getattr };
 allow vendor_early_eth shell_exec:file { map read execute getattr };
 allow vendor_early_eth vendor_early_eth:capability { net_admin };
+allow vendor_early_eth proc_net:file { open write };
 userdebug_or_eng(`allow vendor_early_eth kmsg_device:chr_file { open write }');
