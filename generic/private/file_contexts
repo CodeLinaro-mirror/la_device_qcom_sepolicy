@@ -34,6 +34,9 @@
 /data/misc/seemp(/.*)?          u:object_r:vendor_seemp_data_file:s0
 
 /(product|system/product)/etc/init\.qcom\.testscripts\.sh         u:object_r:qti-testscripts_exec:s0
+/(product|system/product)/bin/network_config_default\.sh          u:object_r:vendor_create_vlan_exec:s0
+/(product|system/product)/bin/create_vlan_vm_[1-9]\.sh            u:object_r:vendor_create_vlan_exec:s0
+/(product|system/product)/bin/network_ip_cmd\.sh                  u:object_r:vendor_create_vlan_exec:s0
 
 /storage/emulated(/.*)?         u:object_r:media_rw_data_file:s0
 
