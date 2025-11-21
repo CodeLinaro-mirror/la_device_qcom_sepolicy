@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 # Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
-# Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2023-2025 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 cneservice                                           u:object_r:vendor_cne_service:s0
@@ -49,6 +49,7 @@ wigigp2p                                       u:object_r:vendor_wigigp2p_servic
 wigig                                          u:object_r:vendor_wigig_service:s0
 display.smomoservice                           u:object_r:surfaceflinger_service:s0
 vendor.vpsservice                              u:object_r:vendor_vps_service:s0
+vendor.gppservice                              u:object_r:vendor_gpp_service:s0
 vendor.qspmsvc                                 u:object_r:vendor_qspmsvc_service:s0
 nfc_settings                                   u:object_r:nfc_service:s0
 nfc.st_ext                                     u:object_r:nfc_service:s0
