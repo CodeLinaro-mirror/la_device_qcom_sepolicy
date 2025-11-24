@@ -25,10 +25,9 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#Changes from Qualcomm Innovation Center are provided under the following license:
-
-#Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
-#SPDX-License-Identifier: BSD-3-Clause-Clear
+# Changes from Qualcomm Technologies, Inc. are provided under the following license:
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 /data/misc/elabel(/.*)?         u:object_r:vendor_elabel_data_file:s0
 /data/misc/seemp(/.*)?          u:object_r:vendor_seemp_data_file:s0
@@ -72,6 +71,9 @@
 /(system_ext|system/system_ext)/bin/create_vlan_vm_1\.sh        u:object_r:vendor_create_vlan_exec:s0
 /(system_ext|system/system_ext)/bin/create_vlan_vm_2\.sh        u:object_r:vendor_create_vlan_exec:s0
 /(system_ext|system/system_ext)/bin/network_config_default\.sh  u:object_r:vendor_create_vlan_exec:s0
+/(system_ext|system/system_ext)/bin/early_eth_hgy\.sh             u:object_r:vendor_early_eth_exec:s0
+/(system_ext|system/system_ext)/bin/eth_cli\.sh             u:object_r:vendor_eth_cli_exec:s0
+/(system_ext|system/system_ext)/bin/link_monitor\.sh             u:object_r:vendor_eth_cli_exec:s0
 
 ####### data files ################
 /data/dpm(/.*)?                                 u:object_r:vendor_dpmd_data_file:s0
