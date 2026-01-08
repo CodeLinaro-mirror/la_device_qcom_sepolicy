@@ -155,3 +155,6 @@
 (typeattributeset asymmetric_prop_31_0 (asymmetric_prop))
 (expandtypeattribute (asymmetric_prop_31_0) true)
 (typeattribute asymmetric_prop_31_0)
+(typeattributeset system_io_watchdog_data_file_31_0 (system_io_watchdog_data_file))
+(expandtypeattribute (system_io_watchdog_data_file_31_0) true)
+(typeattribute system_io_watchdog_data_file_31_0)
