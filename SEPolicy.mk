@@ -3,7 +3,7 @@ ifeq ($(call is-vendor-board-platform,QCOM),true)
 SEPOLICY_PATH:= device/qcom/sepolicy
 LOCAL_PATH := $(call my-dir)
 
-ifneq (,$(filter bp4a cp2a, $(TARGET_RELEASE_PLATFORM)))
+ifneq (,$(filter bp4a cp2a next, $(TARGET_RELEASE_PLATFORM)))
   BOARD_SYSTEM_EXT_SEPOLICY_PREBUILT_DIRS := device/qcom/sepolicy/generic
   BOARD_PRODUCT_SEPOLICY_PREBUILT_DIRS := device/qcom/sepolicy/generic/product
 else
