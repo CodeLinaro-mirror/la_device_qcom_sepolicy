@@ -81,6 +81,8 @@
 /(system_ext|system/system_ext)/bin/link_monitor\.sh             u:object_r:vendor_eth_cli_exec:s0
 /(system_ext|system/system_ext)/bin/network_config_default\.sh  u:object_r:vendor_create_vlan_exec:s0
 /(system_ext|system/system_ext)/bin/network_ip_cmd\.sh        u:object_r:vendor_create_vlan_exec:s0
+/(system_ext|system/system_ext)/bin/network_ttl_vm_2\.sh        u:object_r:vendor_create_ttl_exec:s0
+/(system_ext|system/system_ext)/bin/network_ttl_vm_1\.sh        u:object_r:vendor_create_vlan_exec:s0
 
 ####### data files ################
 /data/dpm(/.*)?                                 u:object_r:vendor_dpmd_data_file:s0
