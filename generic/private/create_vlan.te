@@ -26,4 +26,3 @@ allow vendor_create_vlan net_data_file:file { getattr read open };
 allow vendor_create_vlan port:udp_socket { name_bind };
 allow vendor_create_vlan node:udp_socket { node_bind };
 allow vendor_create_vlan vendor_create_vlan:rawip_socket { create getopt setopt };
-

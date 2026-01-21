@@ -1,0 +1,26 @@
+#Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+#SPDX-License-Identifier: BSD-3-Clause-Clear
+
+type vendor_create_ttl, domain;
+type vendor_create_ttl_exec, system_file_type, exec_type, file_type;
+
+typeattribute vendor_create_ttl coredomain;
+
+init_daemon_domain(vendor_create_ttl)
+
+# Domain transition
+type_transition vendor_create_ttl netutils_wrapper_exec:process netutils_wrapper;
+
+# Allow transition permissions
+allow vendor_create_ttl netutils_wrapper:process transition;
+allow vendor_create_ttl netutils_wrapper_exec:file { read getattr open execute map };
+
+# Allow netutils_wrapper to inherit rlimits, AT_SECURE, etc.
+allow vendor_create_ttl netutils_wrapper:process { noatsecure rlimitinh siginh };
+
+# Allow communication between the two processes
+allow vendor_create_ttl netutils_wrapper:process { sigchld };
+allow netutils_wrapper vendor_create_ttl:process { sigchld };
+
+# Allow the child domain to use FDs inherited from the parent domain
+allow netutils_wrapper vendor_create_ttl:fd use;
