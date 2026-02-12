@@ -17,3 +17,5 @@ allow vendor_eth_cli vendor_eth_cli:capability { net_admin sys_module };
 allow vendor_eth_cli net_data_file:dir search;
 allow vendor_eth_cli vendor_eth_cli:udp_socket { create ioctl };
 allowxperm vendor_eth_cli vendor_eth_cli:udp_socket ioctl { SIOCGIFINDEX SIOCGIFADDR SIOCSIFFLAGS };
+allow vendor_eth_cli sysfs_net:dir { search open read getattr };
+allow vendor_eth_cli sysfs_net:file { read open write getattr };
