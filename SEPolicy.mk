@@ -3,13 +3,8 @@ ifeq ($(call is-vendor-board-platform,QCOM),true)
 SEPOLICY_PATH:= device/qcom/sepolicy
 LOCAL_PATH := $(call my-dir)
 
-ifneq (,$(filter bp4a cp2a next, $(TARGET_RELEASE_PLATFORM)))
-  BOARD_SYSTEM_EXT_SEPOLICY_PREBUILT_DIRS := device/qcom/sepolicy/generic
-  BOARD_PRODUCT_SEPOLICY_PREBUILT_DIRS := device/qcom/sepolicy/generic/product
-else
-  BOARD_SYSTEM_EXT_PREBUILT_DIR := device/qcom/sepolicy/generic
-  BOARD_PRODUCT_PREBUILT_DIR := device/qcom/sepolicy/generic/product
-endif
+BOARD_SYSTEM_EXT_SEPOLICY_PREBUILT_DIRS := device/qcom/sepolicy/generic
+BOARD_PRODUCT_SEPOLICY_PREBUILT_DIRS := device/qcom/sepolicy/generic/product
 
 BOARD_PLAT_PUB_VERSIONED_POLICY := device/qcom/sepolicy
 $(shell $(SEPOLICY_PATH)/append.sh)
