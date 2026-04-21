@@ -1,7 +1,0 @@
-#Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
-#SPDX-License-Identifier: BSD-3-Clause-Clear
-
-#Read /dev/block/misc device
-allow uncrypt misc_block_device:blk_file r_file_perms;
-get_prop(uncrypt, asymmetric_prop);
-get_prop(recovery, asymmetric_prop);

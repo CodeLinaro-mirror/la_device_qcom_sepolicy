@@ -166,31 +166,3 @@
 (typeattributeset carpowerpolicyd_service_202404 (carpowerpolicyd_service))
 (expandtypeattribute (carpowerpolicyd_service_202404) true)
 (typeattribute carpowerpolicyd_service_202404)
-
-
-(typeattributeset car_boot_prop_202404 (car_boot_prop))
-(expandtypeattribute (car_boot_prop_202404) true)
-(typeattribute car_boot_prop_202404)
-
-(typeattributeset evs_ais_app_202404 (evs_ais_app))
-(expandtypeattribute (evs_ais_app_202404) true)
-(typeattribute evs_ais_app_202404)
-
-(typeattributeset procfsinspector_service_202404 (procfsinspector_service))
-(expandtypeattribute (procfsinspector_service_202404) true)
-(typeattribute procfsinspector_service_202404)
-
-(typeattributeset sysfs_fs_lifetime_write_202404 (sysfs_fs_lifetime_write))
-(expandtypeattribute (sysfs_fs_lifetime_write_202404) true)
-(typeattribute sysfs_fs_lifetime_write_202404)
-(expandtypeattribute (cartelemetryd_service_202404) true)
-(expandtypeattribute (cartelemetryd_202404) true)
-(typeattribute cartelemetryd_service_202404)
-(typeattribute cartelemetryd_202404)
-(typeattributeset cartelemetryd_service_202404 (cartelemetryd_service))
-(typeattributeset cartelemetryd_202404 (cartelemetryd))
-
-(typeattributeset asymmetric_prop_202404 (asymmetric_prop))
-(expandtypeattribute (asymmetric_prop_202404) true)
-(typeattribute asymmetric_prop_202404)
-

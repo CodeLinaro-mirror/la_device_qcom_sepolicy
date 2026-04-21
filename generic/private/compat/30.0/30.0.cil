@@ -76,27 +76,4 @@
 (typeattribute carwatchdogd_service_30_0)
 (typeattributeset system_car_data_file_30_0 (system_car_data_file))
 (expandtypeattribute (system_car_data_file_30_0) true)
-
 (typeattribute system_car_data_file_30_0)
-
-(typeattributeset car_boot_prop_30_0 (car_boot_prop))
-(expandtypeattribute (car_boot_prop_30_0) true)
-(typeattribute car_boot_prop_30_0)
-
-(typeattributeset carpowerpolicyd_30_0 (carpowerpolicyd))
-(expandtypeattribute (carpowerpolicyd_30_0) true)
-(typeattribute carpowerpolicyd_30_0)
-
-(typeattributeset carpowerpolicyd_service_30_0 (carpowerpolicyd_service))
-(expandtypeattribute (carpowerpolicyd_service_30_0) true)
-(typeattribute carpowerpolicyd_service_30_0)
-(expandtypeattribute (cartelemetryd_service_30_0) true)
-(expandtypeattribute (cartelemetryd_30_0) true)
-(typeattribute cartelemetryd_service_30_0)
-(typeattribute cartelemetryd_30_0)
-(typeattributeset cartelemetryd_service_30_0 (cartelemetryd_service))
-(typeattributeset cartelemetryd_30_0 (cartelemetryd))
-
-(typeattributeset asymmetric_prop_30_0 (asymmetric_prop))
-(expandtypeattribute (asymmetric_prop_30_0) true)
-(typeattribute asymmetric_prop_30_0)
