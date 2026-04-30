@@ -34,3 +34,4 @@ type vendor_hal_displayconfig_service,      hal_service_type, protected_service,
 type vendor_hal_telephony_service, hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qvirt_service,    hal_service_type, protected_service, service_manager_type;
 type vendor_hal_systemhelper_aidl_service, hal_service_type, protected_service, service_manager_type;
+type vendor_perf_service,         app_api_service, service_manager_type;

@@ -26,3 +26,4 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 type vendor_qtelephony, domain;
+dontaudit domain vendor_perf_service:service_manager find;
