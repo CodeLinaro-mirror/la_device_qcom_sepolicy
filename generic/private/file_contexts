@@ -34,6 +34,9 @@
 /data/misc/seemp(/.*)?          u:object_r:vendor_seemp_data_file:s0
 
 /(product|system/product)/etc/init\.qcom\.testscripts\.sh         u:object_r:qti-testscripts_exec:s0
+/(product|system/product)/bin/network_config_default\.sh          u:object_r:vendor_create_vlan_exec:s0
+/(product|system/product)/bin/create_vlan_vm_[1-9]\.sh            u:object_r:vendor_create_vlan_exec:s0
+/(product|system/product)/bin/network_ip_cmd\.sh                  u:object_r:vendor_create_vlan_exec:s0
 
 /storage/emulated(/.*)?         u:object_r:media_rw_data_file:s0
 
@@ -73,6 +76,7 @@
 /system_ext/bin/virtual_keyboard     u:object_r:virtual_keyboard_exec:s0
 /(system_ext|system/system_ext)/bin/create_vlan_vm_1\.sh        u:object_r:vendor_create_vlan_exec:s0
 /(system_ext|system/system_ext)/bin/create_vlan_vm_2\.sh        u:object_r:vendor_create_vlan_exec:s0
+/(system_ext|system/system_ext)/bin/create_whitelist_rbvm\.sh   u:object_r:vendor_create_vlan_exec:s0
 /(system_ext|system/system_ext)/bin/eth_cli\.sh             u:object_r:vendor_eth_cli_exec:s0
 /(system_ext|system/system_ext)/bin/link_monitor\.sh             u:object_r:vendor_eth_cli_exec:s0
 /(system_ext|system/system_ext)/bin/network_config_default\.sh  u:object_r:vendor_create_vlan_exec:s0
