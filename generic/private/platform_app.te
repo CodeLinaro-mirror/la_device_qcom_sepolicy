@@ -25,8 +25,8 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
-# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# Changes from Qualcomm Technologies, Inc. are provided under the following license:
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 #allow platform_app to read vendor_camera_prop
@@ -53,6 +53,10 @@ set_prop(platform_app, vendor_wlc_prop);
 
 #allow platform_app to interact with wificfr hal
 hal_client_domain(platform_app, hal_wificfr)
+
+#allow platform_app to interact with qtiwifi hal
+hal_client_domain(platform_app, hal_qtiwifi)
+
 #allow platform_app to interact with wpa_supplicant
 # adding typeattribute instead of macro because hal_wifi_supplicant has already
 # been defined
