@@ -79,3 +79,6 @@
 /data/nfc(/.*)?                                 u:object_r:nfc_data_file:s0
 /data/misc/(qcc|qdma)(/.*)?                           u:object_r:vendor_qcc_data_file:s0
 /data/misc/sxraux(/.*)?                         u:object_r:vendor_sys_sxrauxd_data_file:s0
+
+###### ES ##########
+/vendor_early_services                                                        u:object_r:vendor_file:s0
