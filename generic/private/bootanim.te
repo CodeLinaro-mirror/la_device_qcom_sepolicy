@@ -6,3 +6,4 @@ get_prop(bootanim, vendor_sys_gpp_prop)
 
 #Allow access to vendor_perf_service
 allow bootanim vendor_perf_service:service_manager find;
+binder_call(bootanim, vendor_perfservice);
