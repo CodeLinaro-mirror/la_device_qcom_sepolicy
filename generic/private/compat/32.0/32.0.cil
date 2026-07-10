@@ -154,12 +154,6 @@
 (typeattributeset car_boot_prop_32_0 (car_boot_prop))
 (expandtypeattribute (car_boot_prop_32_0) true)
 (typeattribute car_boot_prop_32_0)
-(expandtypeattribute (cartelemetryd_service_32_0) true)
-(expandtypeattribute (cartelemetryd_32_0) true)
-(typeattribute cartelemetryd_service_32_0)
-(typeattribute cartelemetryd_32_0)
-(typeattributeset cartelemetryd_service_32_0 (cartelemetryd_service))
-(typeattributeset cartelemetryd_32_0 (cartelemetryd))
 
 (typeattributeset asymmetric_prop_32_0 (asymmetric_prop))
 (expandtypeattribute (asymmetric_prop_32_0) true)

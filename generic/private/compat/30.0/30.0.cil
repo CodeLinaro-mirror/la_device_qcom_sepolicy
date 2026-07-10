@@ -89,12 +89,6 @@
 (typeattributeset carpowerpolicyd_service_30_0 (carpowerpolicyd_service))
 (expandtypeattribute (carpowerpolicyd_service_30_0) true)
 (typeattribute carpowerpolicyd_service_30_0)
-(expandtypeattribute (cartelemetryd_service_30_0) true)
-(expandtypeattribute (cartelemetryd_30_0) true)
-(typeattribute cartelemetryd_service_30_0)
-(typeattribute cartelemetryd_30_0)
-(typeattributeset cartelemetryd_service_30_0 (cartelemetryd_service))
-(typeattributeset cartelemetryd_30_0 (cartelemetryd))
 
 (typeattributeset asymmetric_prop_30_0 (asymmetric_prop))
 (expandtypeattribute (asymmetric_prop_30_0) true)
