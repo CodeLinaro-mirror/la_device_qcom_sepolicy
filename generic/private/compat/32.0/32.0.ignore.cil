@@ -9,4 +9,17 @@
     evs_ais_app
     procfsinspector_service
     sysfs_fs_lifetime_write
+    mesh_missing_vms_prop
+    open_dice_device
+    sdv_dice_chain_provider_service
+    sdv_dt_service
+    sdv_ethernet_ready_prop
+    sdv_id_service
+    sdv_mesh_provisioning_service
+    sdv_mesh_status_service
+    sdv_privileged_gatewaynetworking_service
+    sdv_rpcagent_service
+    sdv_sd_service
+    sdv_transport_support_service
+    vsock_device
     qsguard))
