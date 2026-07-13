@@ -27,3 +27,5 @@
 
 hal_client_domain(permissioncontroller_app, vendor_hal_perf);
 hal_client_domain(gmscore_app, vendor_hal_perf);
+
+allow untrusted_app_all vendor_hal_perf_server:memfd_file { read write map };

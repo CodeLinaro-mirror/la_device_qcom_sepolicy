@@ -1,0 +1,10 @@
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+# Platform app_36 specific rules (target SDK 36)
+
+# Allow platform_app_36 to access Performance HAL (using hal_client_domain macro)
+hal_client_domain(platform_app_36, vendor_hal_perf)
+
+# Allow platform_app_36 to access Ambient Data HAL
+hal_client_domain(platform_app_36, vendor_hal_ambient_data)

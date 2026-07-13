@@ -9,3 +9,6 @@ hal_client_domain(priv_app_36, vendor_hal_unsignedhexlp)
 
 # Allow priv_app_36 to be a client of C2PA HAL
 hal_client_domain(priv_app_36, vendor_hal_c2pa);
+
+# allow priv_app_36 to connect and communicate with DPM TCM socket (vendor_tcmd)
+unix_socket_connect(priv_app_36, vendor_dpmtcm, vendor_tcmd);

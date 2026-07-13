@@ -30,7 +30,10 @@ type vendor_perfservice_exec, exec_type, system_file_type, file_type;
 init_daemon_domain(vendor_perfservice)
 
 add_service(vendor_perfservice, vendor_perf_service);
+add_service(vendor_perfservice, vendor_qspmsvc_service);
+
 binder_use(vendor_perfservice);
 binder_call(vendor_perfservice, system_server);
 binder_service(vendor_perfservice);
 hal_client_domain(vendor_perfservice, vendor_hal_perf);
+hal_client_domain(vendor_perfservice, hal_thermal)

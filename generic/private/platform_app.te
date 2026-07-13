@@ -25,6 +25,10 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Technologies, Inc. are provided under the following license:
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 #allow platform_app to read vendor_camera_prop
 get_prop(platform_app, vendor_persist_camera_prop)
 # Allow cneservice to be found
@@ -69,3 +73,12 @@ get_prop(platform_app, radio_cdma_ecm_prop)
 unix_socket_connect(platform_app, vendor_dpmtcm, vendor_tcmd);
 
 qesdk_app_access(platform_app);
+
+# allow platform_app to be a client of display capture service
+hal_client_domain(platform_app, vendor_hal_display_capture_service_qti)
+
+# Allow platform_app to access Performance HAL (using hal_client_domain macro)
+hal_client_domain(platform_app, vendor_hal_perf)
+
+# Allow platform_app to access Ambient Data HAL
+hal_client_domain(platform_app, vendor_hal_ambient_data)
