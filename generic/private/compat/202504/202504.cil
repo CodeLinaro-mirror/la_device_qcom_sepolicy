@@ -259,3 +259,10 @@
 (expandtypeattribute (system_io_watchdog_data_file_202504) true)
 (typeattribute system_io_watchdog_data_file_202504)
 
+(typeattributeset cartelemetryd_202504 (cartelemetryd))
+(expandtypeattribute (cartelemetryd_202504) true)
+(typeattribute cartelemetryd_202504)
+
+(typeattributeset cartelemetryd_service_202504 (cartelemetryd_service))
+(expandtypeattribute (cartelemetryd_service_202504) true)
+(typeattribute cartelemetryd_service_202504)
