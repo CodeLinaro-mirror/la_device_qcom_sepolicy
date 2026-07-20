@@ -6,26 +6,6 @@
 (typeattributeset new_objects
   ( new_objects
     evs_ais_app
-    mesh_missing_vms_prop
-    open_dice_device
-    orchestrator_power_boot_complete_prop
-    orchestrator_vehicle_boot_complete_prop
-    priority_service_bundle
     procfsinspector_service
-    product_harplatform_props
-    sdv_dice_chain_provider_service
-    sdv_dt_service
-    sdv_id_service
-    sdv_lc_manager_service
-    sdv_lc_service_manager_service
-    sdv_mesh_provisioning_service
-    sdv_mesh_status_service
-    sdv_rpcagent_service
-    sdv_sd_service
-    sdv_someip_stack_service
-    sdv_transport_support_service
-    sdv_vpm_agent_notification_service
     sysfs_fs_lifetime_write
-    untrusted_service_bundle
-    vendor_hal_systemhelper_aidl_service
-    vsock_device))
+    vendor_hal_systemhelper_aidl_service))
