@@ -182,6 +182,12 @@
 (typeattributeset sysfs_fs_lifetime_write_202404 (sysfs_fs_lifetime_write))
 (expandtypeattribute (sysfs_fs_lifetime_write_202404) true)
 (typeattribute sysfs_fs_lifetime_write_202404)
+(expandtypeattribute (cartelemetryd_service_202404) true)
+(expandtypeattribute (cartelemetryd_202404) true)
+(typeattribute cartelemetryd_service_202404)
+(typeattribute cartelemetryd_202404)
+(typeattributeset cartelemetryd_service_202404 (cartelemetryd_service))
+(typeattributeset cartelemetryd_202404 (cartelemetryd))
 
 (typeattributeset asymmetric_prop_202404 (asymmetric_prop))
 (expandtypeattribute (asymmetric_prop_202404) true)
