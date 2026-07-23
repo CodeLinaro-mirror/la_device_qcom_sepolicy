@@ -254,6 +254,10 @@ attribute vendor_hal_poweroptservice;
 attribute vendor_hal_poweroptservice_client;
 attribute vendor_hal_poweroptservice_server;
 
+attribute vendor_hal_mpamservice;
+attribute vendor_hal_mpamservice_client;
+attribute vendor_hal_mpamservice_server;
+
 attribute vendor_hal_dpmapiservice_qti;
 attribute vendor_hal_dpmapiservice_qti_client;
 attribute vendor_hal_dpmapiservice_qti_server;
