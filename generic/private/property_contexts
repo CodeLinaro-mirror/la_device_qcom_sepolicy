@@ -125,3 +125,6 @@ persist.vendor.sys.ims.                          u:object_r:vendor_sys_ims_prop:
 persist.vendor.sys.qti.telephony.vt_cam_interface u:object_r:vendor_sys_ims_prop:s0
 
 persist.vendor.telephony.feature_list        u:object_r:radio_control_prop:s0 exact string
+
+#mm-display
+service.sf.prime_shader_cache u:object_r:system_display_prime_shader_prop:s0
