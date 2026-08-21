@@ -48,3 +48,6 @@ hal_client_domain(vendor_voiceui_app, vendor_hal_dspmanager);
 
 # allow access to memfd_file shared by hal_audio_server
 allow vendor_voiceui_app hal_audio_server:memfd_file { getattr read write map };
+
+# Allow vendor_voiceui_app to access Ambient Data HAL
+hal_client_domain(vendor_voiceui_app, vendor_hal_ambient_data);
