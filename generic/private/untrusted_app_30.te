@@ -31,6 +31,9 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 qesdk_app_access(untrusted_app_30);
+# backward compatibility for older targets with android 17
+hal_client_domain(untrusted_app_30, vendor_hal_qspmhal)
+
 # allow app to be a client of DSP HAL
 hal_client_domain(untrusted_app_30, vendor_hal_dspmanager)
 
