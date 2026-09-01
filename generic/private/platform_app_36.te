@@ -8,3 +8,6 @@ hal_client_domain(platform_app_36, vendor_hal_perf)
 
 # Allow platform_app_36 to access Ambient Data HAL
 hal_client_domain(platform_app_36, vendor_hal_ambient_data)
+
+# allow app to be a client of DSP HAL
+hal_client_domain(platform_app_36, vendor_hal_dspmanager)

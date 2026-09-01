@@ -2,6 +2,9 @@
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 qesdk_app_access(untrusted_app_34);
+# backward compatibility for older targets with android 17
+hal_client_domain(untrusted_app_34, vendor_hal_qspmhal)
+
 # allow app to be a client of DSP HAL
 hal_client_domain(untrusted_app_34, vendor_hal_dspmanager)
 
