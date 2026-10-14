@@ -6,4 +6,5 @@
 (typeattributeset new_objects
   ( new_objects
     vendor_hal_qvirtservice_qti
-    vendor_hal_qvirt_service))
+    vendor_hal_qvirt_service
+    system_display_prime_shader_prop))

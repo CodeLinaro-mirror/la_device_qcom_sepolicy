@@ -112,3 +112,6 @@ ro.vendor.power.tuning.support             u:object_r:vendor_exported_system_pro
 # qspa
 ro.vendor.config.qspa.       u:object_r:vendor_qspa_prop:s0
 
+# display prime shader cache
+service.sf.prime_shader_cache  u:object_r:system_display_prime_shader_prop:s0
+

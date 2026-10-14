@@ -6,4 +6,5 @@
 (typeattributeset new_objects
   ( new_objects
     vendor_wlc_public_prop
+    system_display_prime_shader_prop
   ))
