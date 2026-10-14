@@ -44,3 +44,6 @@ get_prop(surfaceflinger, vendor_sys_gpp_prop)
 
 #Allow access to vendor_perf_service
 allow surfaceflinger vendor_perf_service:service_manager find;
+
+# allow surfaceflinger to read display prime shader cache property
+get_prop(surfaceflinger, system_display_prime_shader_prop)
